@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>news.html</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/affirm.css">
+	<script src="js/TouchSlide.1.1.js"></script>
+	<style>
+    body{background-color: #fff;font-family: "Microsoft Yahei";font-size: 14px;padding-top:0;}
+    ul,ol{list-style: none;}
+ .fl{float:left;}
+ .fr{float: right;}
+
+.col-3{box-sizing:border-box;-webkit-box-sizing:border-box;}
+.col-3{width: 25%;float: left;padding: 10px;}
+.nav{height: 70px;background-color: #353b48;width: 100%;}
+.nav h4{height: 70px;line-height: 50px;float: left;}
+.navbar{float: right;padding-right: 0;}
+.navbar li{float: left;}
+.navbar li a{display: inline-block; height: 70px;line-height: 70px;text-align: center;width: 100px;color:#c5dee4;}
+.navbar li a:hover{background-color:#9f4f04;text-decoration: none;color:#fff;}
+.nav-button{float: right; margin-top: 20px;}
+.nav-button input{width: 65px;height: 35px;border-radius: 5px;border:1px solid #5c626f;background-color:#353b48;}
+.nav-button input:hover{color:#fff;background-color:#9f4f04;border:1px solid #9f4f04;font-weight:700;}
+
+
+ .news-titles{margin-top: 47px;}
+ .news-titles li{display: inline-block;height: 65px;width: 168px;background-color: #ececec;border-radius: 5px;line-height: 65px;text-align: center;margin-right: 50px;}
+.news-titles li span{color: #8a8a8a;font-size: 20px;margin-left: 5px;}
+.news-titles li:hover{background-color: #9f461f;opacity: 0.8;color: #fff;text-decoration: none;}
+.news-titles li:hover span{color: #fff;text-decoration: none;}
+.news-titles .active{background-color: #9f461f;opacity: 0.8;color: #fff;}
+.news-titles .active span{color: #fff;text-decoration: none;}
+.news-title{border-bottom: 1px dashed #c8c8c8;padding-bottom: 40px;}
+.news-list{margin-top: 40px;width: 100%;margin-right: 0;padding-right: 0;}
+.news-list li{padding-right: 0;padding-left: 0;padding-top: 25px;padding-bottom: 60px;}
+.news-list .news-text{border: 1px solid #c8c8c8;height:365px;}
+.news-list .news-text h4{height: 100px;background-color:#f8f8f8;width: 100%;margin-top: 0;padding-top: 35px;padding-left: 15px;padding-right:15px; color: #5b5b5b;font-weight: bold;}
+.news-list .news-text p{padding: 15px;}	
+.news-list .news-text a{display: block;text-align: center;padding-top: 10px;}
+.news-list .news-text a span{border: 1px solid #9f461f;padding:10px 35%;border-radius: 5px;color: #9f461f;}
+.news-list .news-text a span:hover{background-color:#9f461f;color: #fff;text-decoration: none;}
+.news-list .time{height: 32px;line-height: 32px;width: 165px;background-color: #efe4e0;color: #9f461f;font-size: 12px;text-align: center;}
+.news-list li:nth-child(4n+1){padding-right: 30px;}
+.news-list li:nth-child(4n){padding-left: 30px;}
+.news-list li:nth-child(4n+2){padding-right: 15px;}
+.news-list li:nth-child(4n+3){padding-left: 15px;}
+.sub-footer{margin-left: 32%;padding-bottom:60px;}
+.news-footer li{float: left;}
+.news-footer a{border: 1px solid #d3d3d3;padding: 10px 15px;color: #929292;border-radius: 5px;margin-left: 10px;}
+.news-footer a:hover{background-color:#9f4f04;color:#fff;text-decoration: none; }
+.news-footer .pgup{margin-right:20px;}
+.news-footer .pgdn{margin-left: 30px;}
+.news-footer .f-active{background-color:#b6572e;color:#fff;text-decoration: none;}
+
+.navbar .active{background-color: #9f4f04;}
+.navbar .btn-tuichu{color: #66665c;border: 1px solid #5c626f;}
+.navbar .btn-tuichu:hover{background-color: #9f4f04;color: #fff}
+.news-titles li a{display: block;}
+
+	</style>
+
+
+
+
+
+</head>
+<body>
+<div class="nav clearfix">
+	<div class="container">
+		<h4><img src="images/detail-nav.png" alt=""></h4>
+		<ul class="navbar list-unstyled">
+			<li><a href="myindex.html">首页</a></li>
+			<li><a href="invest-record.html">投资项目</a></li>
+			<li><a href="borrow-money.html">我要借款</a></li>
+			<li><a href="about-us.html">关于我们</a></li>
+			<li class="active"><a href="news.html">新闻公告</a></li>
+			<div class="nav-button">
+			<a href="baotuodai-login.html" class="btn btn-tuichu">退出</a><!-- <input type="button" value="退出"> --></div>
+		</ul>
+		
+	</div>
+</div>
+<!-- nav  ed -->
+<div class="news-title">
+	<div class="container">
+		<ul class="news-titles list-unstyled clearfix">
+			<li class="fl active"><a href="news.html" class="news-notice"><img src="images/news-notice.png" alt=""> <span>新闻公告</span></a></li>
+			<li ><a href="news-details.html"><img src="images/news-media.png" height="32" width="32" alt=""><span>媒体报道</span></a></li>
+		</ul>
+	</div>
+</div>
+<!-- .news-title ed -->
+<div class="news-lists">
+	<div class="container">
+		<ul class="news-list list-unstyled">
+			<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+			<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+			<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+					<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+							<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+							<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+							<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+							<li class="col-3">
+			<div class="news-text">
+				<h4>关于冒充宝驼贷诈骗客户的
+警示公告</h4>
+<p>近日，顺丰速运有限公司发现，有不法分
+子假冒本公司，通过电话或短信通知客户
+有未签收快件或扣留快件，要求客。
+户提供私人信息，并蒙骗客户，试图实施
+经济诈骗。顺丰速运已第一时间向公安机
+关报案。为了保护客户切身利益，特提醒
+广大客户，增强风险防范......</p>
+<a href=""><span>查看详情</span></a>
+</div>
+<div class="time">2014-08-09 10:20:59</div>
+			</li>
+		</ul>
+		<div class="news-footer">
+			<ul class="sub-footer list-unstyled clearfix">
+				<li><a href="" class="pgup">上一页</a></li>
+				<li><a href="" class="f-active">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="" class="pgdn">下一页</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- footer st -->
+<footer>
+	
+	<div class="bank">
+	<div class="container">
+		<h4>合作伙伴</h4>
+		<ul class="friend pull-left row col-xs-12">
+			<li class="pull-left"><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+		</ul></div>
+		</div>
+		<div class="foot">
+		<div class="container">
+			<a href="" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+		</div>
+	
+</div>
+</footer>
+
+<!-- footer ed -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

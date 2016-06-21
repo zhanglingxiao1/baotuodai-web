@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>宝驼贷</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index-bao.css">
+<style>
+html{font-size: 12px;}
+body{ padding-top: 70px;}
+img{ border: none; vertical-align: top;}
+ul,ol{list-style: none;}
+h1,h2,h3,h4,h5{ color: #333;}
+.de-line{ position: relative;}
+.de-line:after{ content: ""; display: block; position: absolute; width: 80%; height: 4px; background-color:#d27127; left: 0; bottom: -10px; }
+.btn-more{ margin-top:30px; position: relative; padding-right: 25px;}
+.btn-more:after{ content: ""; display: block; position: absolute; width: 7px; height: 7px; border-top:2px solid #d27127;border-right:2px solid #d27127; top:50%; right:17px; transform:rotate(45deg) translate(0,-75%); transition:all 0.7s;}
+.btn-more:hover:after{right:12px;}
+
+.text-strong{ color: #d27127; font-size: 36px; font-weight: 800;}
+
+
+.btn-default:hover {
+    color: #fff;
+    background-color:#9f4f04;
+    border-color:#9f4f04;
+}
+.navbar-inverse .navbar-link:hover {
+  color:#9f4f04;
+}
+
+.navbar-brand{ padding-top: 0; position: relative; z-index: 100;}
+.navbar-right{ margin-top: 2rem;}
+.btn-line{ border: 1px solid #9f4f04; color: #9f4f04; background-color: transparent;} 
+.barline{stroke-width:3px;}
+
+
+.hot-btn{ background-color: #fff; padding-bottom:15px; box-shadow: 0 2px 3px #bbb;}
+.hot-btn h5{ color: #333; font-size: 18px;}
+.hot-btn p{ width: 90%; margin:0 auto; }
+.hot-btn a{ color: #999; display: block;}
+.hot-btn img{ margin-top: 2rem; display: inline-block;transform:scale(0.8,0.8);-webkit-transform:scale(0.8,0.8); transition:all 0.3s ease;}
+.hot-btn a:hover img{ transform:scale(1,1) rotate(10deg);-webkit-transform:scale(1,1) rotate(10deg);}
+.hot-btn a:hover{ color: #666; text-decoration: none;}
+.pro-lists{margin-top: 50px;}
+.pro-lists>li{ background-color: #fff; margin-bottom: 20px; padding-left: 0;padding-right: 0; box-shadow: 0 2px 3px #aaa;}
+.pro-img{ padding-left: 0; padding-right: 0; overflow: hidden;}
+.pro-img img{ height: 100%; width: auto;}
+.pro-row{ margin-top: 25px; margin-bottom: 35px;}
+.pro-row .col-xs-3 p{ margin-bottom: 0;}
+/*圆环*/
+.circle{ position: relative; transform:scale(0.5,0.5); margin-top: -50px; top:20px; left: 10px;}
+.c-out{ width: 100px; height: 100px; border-radius: 100px;  clip:rect(0,100px,100px,50px); overflow: hidden; position: absolute; left: 0; top: 0}
+.c-in{ width: 100px; height: 100px; background-color: #999; border-radius: 100px; position: absolute; left: 0; right: 0;clip:rect(0,100px,100px,50px); transform:rotate(180deg);}
+
+.c-out2{ width: 100px; height: 100px; border-radius: 100px;  clip:rect(0,50px,100px,0px); overflow: hidden; position: absolute; left: 0; top: 0}
+.c-in2{ width: 100px; height: 100px; background-color: #999; border-radius: 100px; position: absolute; left: 0; right: 0;clip:rect(0,50px,100px,0px); transform:rotate(90deg);}
+.c-bg{  width: 100px; height: 100px; border-radius: 100px;  background-color:#d85813; }
+.c-mask{ background-color: #fff; width: 80px; height: 80px; position: absolute; left:10px; top:10px; border-radius: 80px; font-size: 28px; line-height: 80px;}
+/*圆环*/
+.pro-btn{ margin-top: 80px;}
+.pro-title{ margin-top: 20px;}
+.blockquote-h{ height: 400px; width: 100%; background:#1F4072 url(images/block-bg.jpg); background-size: cover; overflow: hidden; position: relative;}
+.blockquote{ width: 80%;margin: 100px auto; border: none; position:relative;}
+.blockquote-h:before{ content: ",,"; font-family: "Aril"; font-size: 180px; color: yellow; position: absolute;  left:350px; top:0px; font-weight: 900; transform:rotate(180deg); }
+.blockquote-h:after{ content: ",,"; font-family: "Aril"; font-size: 180px; color: yellow; position: absolute;  right:350px; bottom:0px; font-weight: 900;  }
+.blockquote-h h2{ font-size: 56px; text-align: center; color: #fff; text-shadow: 0 2px 3px #666; font-weight: 900; }
+.blockquote-h footer{ text-align: right; color: #fff; margin-right: 23%;}
+#wealth{background-color:rgba(231,231,67,.000000001); }
+.rank-1{ clear:both; padding-top: 25px;}
+.rank-1 a{ color: #666;}
+.rank-1 li{ height: 40px; line-height: 40px; padding-left: 40px; position: relative; }
+.rank-1 li:before{ content:""; display: inline-block; height: 40px; line-height: 40px; width: 40px; background: no-repeat center center; position: absolute; left:0; top: 0;}
+.rank-1 li:nth-of-type(1):before{ background-image: url("images/1.png")}
+.rank-1 li:nth-of-type(2):before{ background-image: url("images/2.png")}
+.rank-1 li:nth-of-type(3):before{ background-image: url("images/3.png")}
+.rank-1 li:nth-of-type(4):before,.rank-1 li:nth-of-type(5):before{ content:"4"; height: 25px; line-height: 25px; width: 25px; text-align: center; background-color:#d9d9d9; border-radius: 3px; color: #d27127; margin-left: 5px; margin-top:5px;}
+.rank-1 li:nth-of-type(5):before{ content:"5"; }
+.rank-1 li a{ display: block;}
+.rank-2{height: 25px; line-height: 25px; width: 25px; text-align: center;}
+.rank-name{ width: 100px; overflow: hidden; display: inline-block; vertical-align: bottom;}
+.rank-news{ overflow: hidden;display: inline-block;}
+.map{ width: 100%; clear: both; height: 440px; overflow: hidden;vertical-align: bottom;background-image: url(images/add-bb.jpg);}
+
+.new-left{margin-top: 15px;background-color: #fff;padding:10px;padding-left: 10px;}
+
+.img-li{padding-left: 0;padding-right: 0;}
+.text-left{line-height:25px;padding-top: 20px;}
+
+.text-day{padding-top: 10px;padding-left: 20px;color: rgb(145,145,145);}
+.text-more{padding-top: 10px;margin-left:90px;}
+.text-more:hover{color: #C3910D;}
+.col-md-6{width: 48%;margin-right: 10px;}
+
+
+
+/*媒体报道*/
+.media{height: 455px;background-color: #fff;}
+@media screen and (max-width: 768px){
+    html{ font-size: 12px;}
+    body{ padding-top: 3.6rem;}
+    h2{ font-size: 1.8rem;}
+    h3{ font-size: 1.4rem;}
+    h4{ font-size: 1.1rem;}
+    .de-line:after{ height: 2px;}
+    .navbar-toggle{ height: 3rem; width: 3rem; font-size: 0.7rem; line-height: 2.5rem; padding: 0; margin: 0.5rem; margin-right: 1rem; margin-top: 0.2rem;}
+    .glyphicon-menu-hamburger{ font-size: 1.5rem; line-height: 3rem; height: 3.6rem; }
+      .navbar{  min-height:3.6rem; line-height:3.6rem;padding-top: 0; padding-bottom: 0;}
+      .navbar-brand{ height: 3.6rem;}
+      .navbar-brand img{ width: 3.4rem; height: auto;}
+      .navbar-header{ height: 3.6rem;}
+     .navbar .active{background-color: #9f4f04;}
+
+      .hot-btn img{ max-width: 4.5rem;transform:scale(1,1);}
+       .hot-btn h5{ font-size: 1rem; color: #999;}
+       .btn-more{ margin-top: 1.5rem;}
+       .pro-lists{ margin-top: 1.5rem;}
+       .pro-img img {height: auto; width: 100%; }
+    .text-strong{ font-size: 1.2rem;}
+    .pro-row{ margin-top: 1rem; margin-bottom: 0rem;}
+    .pro-row .col-xs-3,.pro-row .col-xs-4{ padding: 0px;}
+    .circle{ position: absolute;left: 0;top: 0;
+    /* transform: translate(-0%,-0%); */
+    transform: scale(0.35,0.35) translate(-50%,-120%);
+    margin-top: 0;}
+    .pro-btn-block { padding-left: 0.3rem; border-top:1px dashed #ddd; padding-top: 0.3rem; }
+    .pro-btn-block div{ margin: 0; padding: 0;}
+    .pro-btn-block p{ margin: 0; padding: 0; font-size: 0.8rem;}
+    .pro-btn{ margin-top: 0.3rem; font-size: 1.2rem; padding: 0.6rem; }
+    .pro-lists>li{ padding: 1rem; }
+    .coporation-norwap{ width: 95%; overflow: hidden;white-space: nowrap; text-overflow:ellipsis; }
+    .pro-title{ max-height: 2.4rem; font-size: 1.2rem; overflow: hidden; margin-top: 0;}
+    .primary-big{ height: 1.5rem; margin-bottom: 0.5rem;}
+    .circle-below{ margin-top:2rem;}
+
+    .rank-news{font-size:1rem;line-height:1.5rem;padding-top: 0px;  }
+    .text-left{padding-top: 5px;}
+    .text-day{padding-left:1px;}
+    .text-more{margin-left: 25px;}
+    .new-left{height:120px; }
+    .new-left>div>li img{height: 50%;width: auto;}
+    .new-left{padding: 0.5rem}
+    #zb-img{height:8rem;margin-top:0.6rem;}
+    .col-xs-12{width: 100%}
+
+    .media{height: 900px;}
+    #lisy{width: 100%; height: 90%}
+
+    .about{height: 300px;padding-top: 0}
+    .about .row img{height: 50%}
+    .about .container{height: 120px;}
+    .list{display: none;}
+    /*.list1{width: 70px;height: 100px;display:hidden;padding-top: 20px;}*/
+    .madiea{padding-left: 0}
+   
+    #btds img{width: 100px;}
+    #btd-p{padding-top: 0;width:330px;line-height:normal;padding-top: 10px; border-top: 1px solid rgb(230,230,230);}
+    #look-more a{display: none;}
+    #about-title{height: 350px;padding-top: 0}
+
+    #pl28{padding-left: 28px;}
+    #serve p{padding-left: 0}
+
+
+    
+
+.btd_footer>div img{height: 20px;width: auto;}
+.footer{height: 80px;display: block;}
+.footer>div{height: 40px;width: 100%;}
+.btd_footer{height: 30px;line-height: 5px;}
+.footer_last{line-height:30px;display: none}
+.colxs6{line-height: 30px;}
+.bank_img{padding-top: 0} 
+.footer .container{height: 80px;}
+.pt115{margin-top: 0}
+.blockquote{margin-top: 0}
+.text-day,.text-more{display: none;}
+.media .pl40{padding-left: 0}
+    }
+@media screen and (max-width: 320px){
+html{ font-size: 12px;}
+body{ font-size: 0.9rem;}
+.pro-title{ max-height: 2.4rem; font-size: 1.2rem;}
+.col-xs-3{ padding-left: 0.3rem;}
+.pro-row .col-xs-4 p{ margin-bottom: 0.5rem;}
+.mg-li img{width: 100%;width: auto;}
+.blockquote h2{font-size: 3rem;}
+.blockquote-h{height: 180px;}
+
+}
+
+.navbar-right li{}
+.media .row .col-md-3{border-bottom: 2px solid rgb(212,112,36);border-left:1px solid rgb(217,217,217);border-right:1px solid rgb(217,217,217);border-top:1px solid rgb(217,217,217);width: 30%;margin-right: 20px;}
+.media .row{padding-top: 20px;}
+.fl{float: left;}
+.fr{float: right;}
+
+.pt20{margin-top:40px;}
+.mt10{margin-top: -10px;}
+.pb20{padding-bottom: 20px;}
+.pl40{padding-left: 225px;}
+.pt0{padding-top: 0}
+
+
+.about{height: 438px;padding-top: 54px;width: auto;}
+.about .container{background-color: #fff;height: 311px;}
+.pl0{padding-left: 0}
+.pr0{padding-right: 0}
+.list{border-radius:1px solid rgb(237,237,237);padding-right: 0;padding-top: 70px;}
+.list p{padding-top: 8px;}
+.pt30{padding-top: 60px;}
+.pt15{padding-top: 15px;}
+.pt18{padding-top: 18px;}
+.pb0 p{margin-bottom: 0}
+.pl10{padding-left: 28px;}
+.mt0{margin-top: 0}
+.map-container{height:282px;background-color: rgba(253,253,251,.9);margin-top: 87px;}
+.map-up p{height: 38px;line-height: 38px;padding-left: 50px;}
+.map-up h3{color: rgb(255,148,60);}
+.mobile{color: rgb(211,109,34);}
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+   <a class="navbar-brand" href="myindex.html">
+        <img alt="Brand" src="images/logo-header.jpg">
+   </a>
+   <button class="navbar-toggle"  data-toggle="collapse" data-target="#main-nav" >
+
+<span class="glyphicon glyphicon-menu-hamburger"></span>
+   </button>
+  </div>
+  <div class="navbar-collapse collapse" id="main-nav">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="myindex.html">首页</a></li>
+      <li><a href="invest-record.html">投资项目</a></li>
+      <li><a href="borrow-money.html">我要借款</a></li>
+      <li><a href="about-us.html">关于我们</a></li>
+      <li><a href="news.html">新闻公告</a></li>
+    </ul>
+    <ul class="list-unstyled list-inline navbar-right"><a href="myindex.html"><img src="images/登录、注册头像.png" alt="" height="35";width="35" class="landing"></a>
+      <li><a href="baotuodai-login.html" class="navbar-link navloading">安全登录</a></li>
+      <li><a href="baotuodai-register.html" class="btn btn-default btn-sm btn-line">注册</a></li>
+
+    </ul>
+
+  </div>
+</div>
+</nav>
+<!-- 导航 -->
+<div class="banner">
+ 
+   <img src="images/slide01.jpg" width="100%" alt="">
+ 
+</div>
+<!-- banner -->
+<div class="hot-btn">
+<div class=" container">
+  <ul class="row clearfix text-center list-unstyled">
+    <li class="col-xs-3">
+    <a href="about-us.html">
+        <img src="images/icon-hot-1.png" alt="">
+        <h5>本息保障</h5>
+        <p class="hidden-xs">国企背景超强银团担保,国资担保机构本息保障,第三方机构资金托管</p>        
+      </a></li>
+    <li class="col-xs-3"><a href="about-us.html">
+        <img src="images/icon-hot-2.png" alt="">
+        <h5>本息保障</h5>
+        <p class="hidden-xs">国企背景超强银团担保,国资担保机构本息保障,第三方机构资金托管</p> 
+      </a></li>
+    <li class="col-xs-3"><a href="about-us.html">
+        <img src="images/icon-hot-3.png" alt="">
+        <h5>本息保障</h5>
+        <p class="hidden-xs">国企背景超强银团担保,国资担保机构本息保障,第三方机构资金托管</p> 
+      </a></li>
+    <li class="col-xs-3"><a href="about-us.html">
+        <img src="images/icon-hot-4.png" alt="">
+        <h5>本息保障</h5>
+        <p class="hidden-xs">国企背景超强银团担保,国资担保机构本息保障,第三方机构资金托管</p> 
+      </a></li>
+
+  </ul>
+
+</div>
+</div>
+<!-- hot-btn -->
+<div class="project">
+  <div class="container">
+    <div class="se-title row">
+      <h2 class="pull-left de-line">优质项目</h2>
+      <a href="invest-list.html" class="pull-right btn btn-default btn-more">更多项目</a>
+    </div>
+    <ul class="list-unstyled row pro-lists">
+      <li class="col-xs-12">
+        <div class="col-sm-3 col-xs-4 pro-img"><img src="images/list-1.jpg" alt=""></div>
+        <div class="col-sm-7 col-xs-8">
+          <h4 class="pro-title">强力本息担保：上海LB实业发展有限公司短期借款编号201510LBSY-056</h4>
+          <div class="row text-center pro-row clearfix">
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">100万</span><span class="text-primary">元</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">9.6</span><span class="text-primary">%</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4 hidden-xs">
+              <p class="primary-big"><span class="text-strong">1月</span></p> <p>  借款金额</p>
+            </div>
+             <div class="col-sm-3 col-xs-4">
+              <div class="circle">
+              <div class="c-bg"></div>
+              <div class="c-out">
+                <div class="c-in"></div>
+              </div>
+              <div class="c-out2">
+                <div class="c-in2"></div>
+              </div>
+              <div class="c-mask text-primary">75<small>%</small></div>
+
+               
+
+              </div> <p class="circle-below">  借款金额</p>
+            </div>
+            </div>
+          <div class="row">
+          <div class="col-xs-12 hidden-xs">
+            <p class="pull-left"><strong>还款方式：</strong>按月付息，到期还本     </p>
+            <p class="pull-right"><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2 col-xs-12 pro-btn-block">
+         <div class="col-xs-8 visible-xs">
+         <p  ><strong>还款方式：</strong>按月付息，到期还本     </p>
+          <p class="coporation-norwap" ><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+         </div>
+        <div class="col-xs-4 text-right">
+          <a href="invest-record.html" class="btn btn-danger btn-lg pro-btn">立即投资</a>
+          </div>
+        </div>
+
+      </li>
+        <li class="col-xs-12">
+        <div class="col-sm-3 col-xs-4 pro-img"><img src="images/list-1.jpg" alt=""></div>
+        <div class="col-sm-7 col-xs-8">
+          <h4 class="pro-title">强力本息担保：上海LB实业发展有限公司短期借款编号201510LBSY-056</h4>
+          <div class="row text-center pro-row clearfix">
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">100万</span><span class="text-primary">元</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">9.6</span><span class="text-primary">%</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4 hidden-xs">
+              <p class="primary-big"><span class="text-strong">1月</span></p> <p>  借款金额</p>
+            </div>
+             <div class="col-sm-3 col-xs-4">
+              <div class="circle">
+              <div class="c-bg"></div>
+              <div class="c-out">
+                <div class="c-in"></div>
+              </div>
+              <div class="c-out2">
+                <div class="c-in2"></div>
+              </div>
+              <div class="c-mask text-primary">75<small>%</small></div>
+
+               
+
+              </div> <p class="circle-below">  借款金额</p>
+            </div>
+            </div>
+          <div class="row">
+          <div class="col-xs-12 hidden-xs">
+            <p class="pull-left"><strong>还款方式：</strong>按月付息，到期还本     </p>
+            <p class="pull-right"><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2 col-xs-12 pro-btn-block">
+         <div class="col-xs-8 visible-xs">
+         <p  ><strong>还款方式：</strong>按月付息，到期还本     </p>
+          <p class="coporation-norwap" ><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+         </div>
+        <div class="col-xs-4 text-right">
+          <a href="invest-record.html" class="btn btn-danger btn-lg pro-btn">立即投资</a>
+          </div>
+        </div>
+
+      </li>
+
+        <li class="col-xs-12">
+        <div class="col-sm-3 col-xs-4 pro-img"><img src="images/list-1.jpg" alt=""></div>
+        <div class="col-sm-7 col-xs-8">
+          <h4 class="pro-title">强力本息担保：上海LB实业发展有限公司短期借款编号201510LBSY-056</h4>
+          <div class="row text-center pro-row clearfix">
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">100万</span><span class="text-primary">元</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">9.6</span><span class="text-primary">%</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4 hidden-xs">
+              <p class="primary-big"><span class="text-strong">1月</span></p> <p>  借款金额</p>
+            </div>
+            <!-- 圆环 -->
+             <div class="col-sm-3 col-xs-4">
+              <div class="circle">
+              <div class="c-bg"></div>
+              <div class="c-out">
+                <div class="c-in"></div>
+              </div>
+              <div class="c-out2">
+                <div class="c-in2"></div>
+              </div>
+               <!-- 圆环 -->
+              <div class="c-mask text-primary">75<small>%</small></div>
+
+               
+
+              </div> <p class="circle-below">  借款金额</p>
+            </div>
+            </div>
+          <div class="row">
+          <div class="col-xs-12 hidden-xs">
+            <p class="pull-left"><strong>还款方式：</strong>按月付息，到期还本     </p>
+            <p class="pull-right"><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2 col-xs-12 pro-btn-block">
+         <div class="col-xs-8 visible-xs">
+         <p  ><strong>还款方式：</strong>按月付息，到期还本     </p>
+          <p class="coporation-norwap" ><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+         </div>
+        <div class="col-xs-4 text-right">
+          <a href="invest-record.html" class="btn btn-danger btn-lg pro-btn">立即投资</a>
+          </div>
+        </div>
+
+      </li>
+
+        <li class="col-xs-12">
+        <div class="col-sm-3 col-xs-4 pro-img"><img src="images/list-1.jpg" alt=""></div>
+        <div class="col-sm-7 col-xs-8">
+          <h4 class="pro-title">强力本息担保：上海LB实业发展有限公司短期借款编号201510LBSY-056</h4>
+          <div class="row text-center pro-row clearfix">
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">100万</span><span class="text-primary">元</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+            <p class="primary-big"><span class="text-strong">9.6</span><span class="text-primary">%</span></p> <p>  借款金额</p>
+            </div>
+            <div class="col-sm-3 col-xs-4 hidden-xs">
+              <p class="primary-big"><span class="text-strong">1月</span></p> <p>  借款金额</p>
+            </div>
+             <div class="col-sm-3 col-xs-4">
+              <div class="circle">
+              <div class="c-bg"></div>
+              <div class="c-out">
+                <div class="c-in"></div>
+              </div>
+              <div class="c-out2">
+                <div class="c-in2"></div>
+              </div>
+              <div class="c-mask text-primary">75<small>%</small></div>
+
+               
+
+              </div> <p class="circle-below">  借款金额</p>
+            </div>
+            </div>
+          <div class="row">
+          <div class="col-xs-12 hidden-xs">
+            <p class="pull-left"><strong>还款方式：</strong>按月付息，到期还本     </p>
+            <p class="pull-right"><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2 col-xs-12 pro-btn-block">
+         <div class="col-xs-8 visible-xs">
+         <p  ><strong>还款方式：</strong>按月付息，到期还本     </p>
+          <p class="coporation-norwap" ><strong>担保机构：</strong>上海东虹桥融资担保股份有限公司</p>
+         </div>
+        <div class="col-xs-4 text-right">
+          <a href="also-project.html" class="btn btn-success btn-lg pro-btn">&nbsp; &nbsp;还款中&nbsp;&nbsp;</a>
+          </div>
+        </div>
+
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+
+<!-- 项目 -->
+<div class="blockquote-h">
+  <blockquote class="blockquote">
+    <h2>“宝”驾护航“驼”富到家</h2>
+    <footer id="wealth">网贷 ,财富绿洲领导者-宝驼贷</footer>
+  </blockquote>
+</div>
+<!-- 引用 -->
+<div class="ranklist"> 
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <h3 class="de-line pull-left clearfix">活跃用户排行榜</h3>
+      <ul class="list-unstyled rank-1">
+        <li><a href="my-invest.html"><span class="rank-name">疯狂小魔头**</span>    共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">疯狂小魔头**</span>    共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">疯狂小魔头**</span>    共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">疯狂小魔头**</span>    共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">疯狂小魔头** </span>   共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+      </ul>
+
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <h3 class="de-line pull-left clearfix">最新投资</h3>
+      <ul class="list-unstyled rank-1">
+        <li><a href="my-invest.html"><span class="rank-name">袁**公</span>5分钟前投资了<span class="text-primary rank-money">108,200</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">袁**公</span>5分钟前投资了<span class="text-primary rank-money">108,200</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">袁**公</span>5分钟前投资了<span class="text-primary rank-money">108,200</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">袁**公</span>5分钟前投资了<span class="text-primary rank-money">108,200</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">袁**公</span>5分钟前投资了<span class="text-primary rank-money">108,200</span>元</a></li>
+      </ul>
+      
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <h3 class="de-line pull-left clearfix">当日投资排行榜</h3>
+      <ul class="list-unstyled rank-1">
+        <li><a href="my-invest.html"><span class="rank-name">黄**艳</span>共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">黄**艳</span>共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">黄**艳</span>共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">黄**艳</span>共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+        <li><a href="my-invest.html"><span class="rank-name">黄**艳</span>共计投资<span class="text-primary rank-money">2,578,634.00</span>元</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+</div>
+<!-- 排行榜 -->
+<div class="news">
+    <div class="container">
+    <div class="col-md-12"><h3 class="de-line pull-left clearfix">新闻公告</h3></div>
+    
+      <div class="col-xs-12 col-md-6 new-left clearfix">      
+      <div class="list-unstyled ">
+       <li class="col-md-4 col-xs-4 img-li"><img src="images/zb.png" alt="" id="zb-img">
+      </li>
+        <li class="col-md-8 col-xs-8 text-left"><span class="rank-news">"影视计划第三期"融资3000万。根据投资期限分为"影视计划爱投资风控部门及承保该项目的中源盛祥融资担保有限公司在货后检查过"</span><span class="text-primary rank-news text-day">6194次</span><span class="text-primary rank-news text-bettom text-day">2015-08-19</span><a href="news-details.html"class="text-primary rank-news text-bettom text-more">查看更多></a></li>
+      </div>     
+    </div>
+      <div class="col-xs-12 col-md-6 new-left clearfix">      
+      <div class="list-unstyled ">
+       <li class="col-md-4 col-xs-4 img-li"><img src="images/zb.png" alt="" id="zb-img">
+      </li>
+        <li class="col-md-8 col-xs-8 text-left"><span class="rank-news">"影视计划第三期"融资3000万。根据投资期限分为"影视计划爱投资风控部门及承保该项目的中源盛祥融资担保有限公司在货后检查过"</span><span class="text-primary rank-news text-day">6194次</span><span class="text-primary rank-news text-bettom text-day">2015-08-19</span><a href="news-details.html"class="text-primary rank-news text-bettom text-more">查看更多></a></li>
+      </div>     
+    </div>
+          <div class="col-xs-12 col-md-6 new-left clearfix">      
+      <div class="list-unstyled ">
+       <li class="col-md-4 col-xs-4 img-li"><img src="images/zb.png" alt="" id="zb-img">
+      </li>
+        <li class="col-md-8 col-xs-8 text-left"><span class="rank-news">"影视计划第三期"融资3000万。根据投资期限分为"影视计划爱投资风控部门及承保该项目的中源盛祥融资担保有限公司在货后检查过"</span><span class="text-primary rank-news text-day">6194次</span><span class="text-primary rank-news text-bettom text-day">2015-08-19</span><a href="news-details.html" class="text-primary rank-news text-bettom text-more">查看更多></a></li>
+      </div>     
+    </div>      
+          <div class="col-xs-12 col-md-6 new-left clearfix">      
+      <div class="list-unstyled ">
+       <li class="col-md-4 col-xs-4 img-li"><img src="images/zb.png" alt="" id="zb-img">
+      </li>
+        <li class="col-md-8 col-xs-8 text-left"><span class="rank-news">"影视计划第三期"融资3000万。根据投资期限分为"影视计划爱投资风控部门及承保该项目的中源盛祥融资担保有限公司在货后检查过"</span><span class="text-primary rank-news text-day">6194次</span><span class="text-primary rank-news text-bettom text-day">2015-08-19</span><a href="news-details.html" class="text-primary rank-news text-bettom text-more">查看更多></a ></li>
+      </div>     
+    </div>
+
+    </div>
+
+    </div>
+<!-- 媒体报道     -->
+<div class="media"> 
+  <div class="container">
+    <div class="col-md-12"><h3 class="de-line pull-left clearfix">媒体报道</h3></div>
+    <div class="row">
+        <div class="col-md-3 col-xs-12 pt20 " id="lisy">
+        <ul class=" list-unstyled">
+          <li class="col-md-12 col-xs-12"><h1 class="fl">网易</h1>
+          <span class="pt20 fl">2015-08-21</span></li>
+          <li class="col-md-12 mt10"><h3>银监会:P2P网络借贷平台发展不得突破四条红基本原则</h3></li>
+          <li class="col-md-12"><p>张刘君表示，随着互联网的飞速发展，非法集资活动也呈现出从线下到线上转移的趋势，大量非法投融资广告信息通过</p></li>
+          <li class="col-md-12 fr pb20 pl40"><a href="news.html">查看详情</a>></li>
+        </ul></div>
+        <div class="col-md-3 col-xs-12 pt20 " id="lisy">
+        <ul class=" list-unstyled">
+          <li class="col-md-12 col-xs-12"><h1 class="fl">网易</h1>
+          <span class="pt20 fl">2015-08-21</span></li>
+          <li class="col-md-12 mt10"><h3>银监会:P2P网络借贷平台发展不得突破四条红基本原则</h3></li>
+          <li class="col-md-12"><p>张刘君表示，随着互联网的飞速发展，非法集资活动也呈现出从线下到线上转移的趋势，大量非法投融资广告信息通过</p></li>
+          <li class="col-md-12 fr pb20 pl40"><a href="news.html">查看详情</a>></li>
+        </ul></div>
+                <div class="col-md-3 col-xs-12 pt20 " id="lisy">
+        <ul class=" list-unstyled">
+          <li class="col-md-12 col-xs-12"><h1 class="fl">网易</h1>
+          <span class="pt20 fl">2015-08-21</span></li>
+          <li class="col-md-12 mt10"><h3>银监会:P2P网络借贷平台发展不得突破四条红基本原则</h3></li>
+          <li class="col-md-12"><p>张刘君表示，随着互联网的飞速发展，非法集资活动也呈现出从线下到线上转移的趋势，大量非法投融资广告信息通过</p></li>
+          <li class="col-md-12 fr pb20 pl40"><a href="news.html">查看详情</a>></li>
+        </ul></div>
+     
+    </div>
+    </div>
+</div>
+<!-- 媒体报道     -->
+
+<div class="about" id="about-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-xs-3 pl0" id="btds"><img src="images/btd.png" height="311" width="244" alt=""></div>
+      <div class="col-xs-8 pr0 pt18">
+        <div class="row visible-xs">
+          <div class="col-md-2 list1 text-center col-cs-3 fr pr0"><img src="images/pic1.png" height="60" width="60" alt=""><p>组织机构证</p></div>
+           <div class="col-md-2 list1 text-center col-cs-3 fr pr0"><img src="images/pic2.png"  height="60" width="60" alt=""><p>税务登记证</p></div>
+           <div class="col-md-2 list1 text-center col-cs-3 fr pr0"><img src="images/pic3.png"  height="60" width="60" alt=""><p>营业执照</p></div>
+           </div>
+      </div>
+      <div class="col-md-9 col-xs-12">
+         <div class="col-md-6 pl0 col-cs-12">
+           <div class="col-md-12 text-left pt0 pr madiea col-xs-12"><h3 class="de-line pull-left clearfix hidden-xs">关于我们</h3>
+           <div class=" pr0 pl0 pt30 pb0" id="btd-p">
+             <p>宝驼贷，是一家金融创新和高度安全性兼具的互联网金融平台，管理层有一批来自具有银行，金融，互联网金融等行业背景，高学历，高专业度的精英人员组成。公司致力于为广大用户提供稳健，安全，较高收益的投资理财产品，并将陆续开发出更为先进和稳健的实用融资工具，以满足平台用户方方面面的需求，真正实现普惠金融。我们期待着自身的稳步快速成长，来为客户提供最优的金融服务，同时也衷心希望广大用户给予我们长期支持与呵护！</p>
+           </div>
+           <div class="col-md-12 pr0 pl0 text-right "id="look-more">  
+           <a href="">查看更多></a>
+           </div>
+         </div>
+        
+           
+         
+      </div>
+      <div class="col-md-2 list text-center col-cs-3"><img src="images/pic1.png" height="126" width="126" alt=""><p>组织机构代码证</p></div>
+         <div class="col-md-2 list text-center col-cs-3"><img src="images/pic2.png"  height="126" width="126" alt=""><p>税务登记证</p></div>
+         <div class="col-md-2 list text-center col-cs-3"><img src="images/pic3.png"  height="126" width="126" alt=""><p>营业执照</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="map">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-7 map-container">
+       <div class="map-up ">
+         <h3 class="pl10">联系我们</h3>
+         <div class="col-md-12 pt15"><img src="images/home-icon4.png" alt="" class="fl"><p>上海市浦东新区金桥路金杨路122号5楼</p></div>
+         <div class="row">
+           <div class="col-md-4 pl10"><img src="images/home-icon3.png" alt="" class="fl"><p class="mobile">400-820-8820</p></div>
+           <div class="col-md-4 " id="pl28"><img src="images/home-icon2.png" alt="" class="fl"><p>021-257863</p></div>
+           <div class="col-md-4" id="pl28"><img src="images/home-icon1.png" alt="" class="fl"><p>baotuo@163.com</p></div>
+         </div>
+         <div class="row pt20">
+             <div class="col-md-2 pl10 pl0 pr0 col-xs-4"> <a href="" class="btn btn-warning btn-lg pro-btn mt0">联系客服</a></div>
+             <div class="col-md-10 pl0 pr0 col-xs-8" id="serve"><p class="small">（客服在线时间：周一至周五 9:00-18:00）</p></div>
+         </div>
+       </div>
+    </div>
+    </div>
+  </div>
+  
+</div>
+
+
+
+</div>
+<!-- 地图 -->
+
+
+<!-- footer st -->
+<footer>
+  
+  <div class="bank">
+  <div class="container">
+    <h4>合作伙伴</h4>
+    <ul class="friend pull-left row col-xs-12">
+      <li class="pull-left"><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+    </ul></div>
+    </div>
+    <div class="foot">
+    <div class="container">
+      <a href="" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+    </div>
+  
+</div>
+</footer>
+
+<!-- footer ed -->
+<!-- 页脚结束 -->
+
+
+
+
+
+
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

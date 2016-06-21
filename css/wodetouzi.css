@@ -1,0 +1,138 @@
+
+
+     /*用户头像开始*/
+ 
+    .user{height: 106px;background-color: #c16d20;padding-left: 20px;}
+    .user{padding-top:10px;}
+   .userw{float: left;}
+   .userlist{height: 20px;line-height: 30px;color: #fff;}
+     /*侧边菜单开始*/
+    .sidebar-menu a{font-size: 14px;display: block;padding-top: 10px;padding-bottom: 10px;
+    }
+    .sidebar-menu{border-left:1px solid #d1d0d0;background-color: #faf8f3; border-right: 1px solid #d9d6d2  ;height: 1035px; }
+    .sidebar-menu li{padding-top: 20px;height:70px;line-height:31px;font-size: 12px; text-align:center;}
+    .sidebar-menu li:nth-child(6){ border-bottom: 1px solid #d9d6d2;}
+    .sidebar-menu a:hover {height:50px;width: 291px;
+    text-decoration: none;background-color: #fff; border-bottom: 1px solid #d9d6d2;
+    border-top: 1px solid #d9d6d2;/*margin-right:-1px;*/}
+    .col-md-3{padding:0px;}
+     .safelevel{font-size: 13px;color:#a6a6a6;margin-top: 20px;margin-left: 5px;}
+    .low{font-weight: bold;color:#de5c5c;margin-left:90px;}
+    .safeline{margin-left: 5px;} /*侧边栏结束*/
+      /*可用余额块开始*/
+    .row .article-r{height: 106px;background-color: #fff;padding: 0px;
+        border-bottom: 1px solid #e6e4e4; border-right: 1px solid #d9d6d2;}
+    .money{background-color: #fff;height:105px;padding-top: 30px;}
+    .money-btn{margin-top: 30px;background-color: #fff}
+    .moneyout:hover{color: rgb(239,91,91);}
+    .moneyout{margin-left: 50px;background-color: #ededed}
+    .moneyin{margin-left:50px;background-color:#c16918 }
+    .money .moneynum{color:#75c31a;}
+    .money h3{font-weight: bold;font-size: 15px;color:#878787;}
+    .money a{font-weight: bold;font-size: 30px;color: #ef5b5b}
+    .money a:hover{text-decoration: none;}
+     /*可用余额块end*/
+      /*项目投资介绍开始*/
+      .progect h3{font-weight: normal;font-size: 14px;color:#c98546;line-height: 30px;margin-top:30px;margin-left:10px;}
+      .progect span{font-weight: bold;font-size: 25px;color: #c16d20;padding-top:10px; }
+      .progect{height: 95px; /*background-color: #f39;*/}
+      /*投资金额结束*/
+      .filtrate{height: 150px;/*background-color: #F80;*/border-bottom: 1px dashed #cacaca}
+      .col-md-7{padding: 0px;}
+      .col-md-2{padding: 0px;}
+      .time{/*background-color: #456*/;height: 150px;padding-top: 20px;}
+     /* .screen{background-color: #f90}*/
+      .screen p{font-size: 14px;color:#878787;line-height:55px;margin-left: 10px; }
+      .filtbtn form{line-height:55px; }
+
+      .filtbtn .btn{width:78px;height:28px;line-height:8px;color:#979797;background-color: #ebebeb;border-radius: 28px;margin-left:10px;}
+    .filtbtn .btn:hover{color:#75c31a;}
+      .all{background-color: #c16918;color: #fff}
+      .btn-r .btn{background-color: #ebebeb;color: #979797}
+     /* .calendar-l{background-color: #F65}*/
+     .col-md-5, .col-md-2 {padding: 0px;}
+      .data{margin-top: 90px;}
+
+     .data h3{font-size: 12px;color: #a5a5a5}
+     .data input{width: 100px;height: 25px;border:1px solid #d1d1d1;}
+     .datetime input{background-image: url(../images/calendr.png);background-repeat: no-repeat;background-position: right;}
+     .datetime input:hover{background-image:none;}
+     .data-k input{background-image: url(../images/calendr.png);background-repeat: no-repeat;background-position: right;}
+
+
+
+.data .search input:hover {
+    background-color: #b6572e;
+    color: #fff;
+}
+     .data-k input:hover{background-image:none;}
+     .data .search input{width: 55px;height: 25px;}
+     .data-k{margin-left:25px;}
+     .col-md-9{padding:0px;}
+     .col-md-1{padding:0px;}
+/*     .qqq{background-color: #f33}*/
+
+     .invest{/*background-color: #F77;*/padding-left:10px;}
+     .investl{border-bottom: 1px dashed #cacaca;}
+    .investlist h3{font-size: 12px;color: #a5a5a5;margin-top: 30px;margin-bottom: 20px;}
+    .invest .tmoney h3{font-size: 14px;font-weight: bold;color: #ff7200;}
+    .investr .interest h3{font-size: 14px;font-weight: bold;color: #5caa00;}
+    .duration h3{font-weight: bold;font-size: 14px;color: #444444;}
+     .invest .num{font-weight: bold;font-size:14px;color: #444444;}
+     .return .nun{font-size: 14px;color: #adadad;}
+     .remoney h3{font-weight: bold;font-size: 14px;color: #b95800;}
+     .remoney span{font-weight: bold;font-size: 14px;color: #adadad;}
+      .investtime h3{font-weight: bold;font-size: 14px;color: #adadad;}
+     .interest{padding-left: 10px;}
+     .return{padding-left: 30px;}
+     .investr {margin-top: 40px;margin-bottom: 90px;}
+     .qqq img{margin-top: -10px}
+     .remone,.remoney h3{padding-left: 20px;}
+     .operation input{width: 65px;height: 30px;margin-top: -5px;border: 1px solid #c25d00;}
+     .operation .btn{background-color: #fff}
+     .btn:hover{background-color: #b6572e;color: #fff;}
+     /*投资栏目结束*/
+     /*下面btn开始*/
+     .blbtn{margin-top: 35px;margin-bottom: 100px;}
+.my-invest-btn input{margin-left: 10px;}
+
+
+
+
+
+   /*  #fon-s{font-size: 14px;}*/
+   /* .return span{font-weight: bold;}
+*/
+ 
+
+
+  
+   
+    
+
+
+/*认证详情*/
+.bankren{margin-top: 50px;margin-bottom:30px; }
+.bankname select{width: 370px;height: 60px;border:1px solid #cdcdcd;font-weight: bold;color:#494949;font-size: 18px;background-image: url(../images/xiala.png);appearance:none;-webkit-appearance:none;background-repeat: no-repeat;background-position: right;}
+ label{font-size: 15px;color: #525252;font-weight: normal;margin-right: 10px;}
+ .banknm input{width: 370px;height: 60px;border:1px solid #cdcdcd;margin-top:25px; }
+ .affirm input{width: 370px;height: 60px;border:1px solid #cdcdcd;margin-top:25px;margin-left: 65px;font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+   
+
+
+        
+
+
+
+
+

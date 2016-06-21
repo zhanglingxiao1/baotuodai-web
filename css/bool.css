@@ -1,0 +1,197 @@
+   
+   .navbar {height: 75px;margin-bottom: 0px;background-color:#353b48;border:none;}
+   .brand{padding-left:82px}
+   .nav{display:block;float:right;font-size: 14px;padding-right:100px;padding-top:10px; }
+   .nav .btn{margin-top: 10px;background-color: #353b48;border: 1px solid #5c626f;}
+   .live{color:#5c626f;}
+   .navbar-default .navbar-nav>li>a:hover{  color: #fff;}
+   .btn:hover{color: #fff;}
+
+
+     /*用户头像开始*/
+ 
+    .user{height: 106px;background-color: #c16d20;padding-left: 20px;}
+    .user{padding-top:10px;}
+   .userw{float: left;}
+   .userlist{height: 20px;line-height: 30px;color: #fff;}
+     /*侧边菜单开始*/
+    .sidebar-menu a{font-size: 14px;display: block;padding-top: 10px;padding-bottom: 10px;
+    }
+    .sidebar-menu{border-left:1px solid #d1d0d0;background-color: #faf8f3; border-right: 1px solid #d9d6d2  ;height: 900px; }
+    .sidebar-menu li{padding-top: 20px;height:70px;line-height:31px;font-size: 12px; text-align:center;}
+    .sidebar-menu li:nth-child(6){ border-bottom: 1px solid #d9d6d2;}
+    .sidebar-menu a:hover {height:50px;width: 291px;
+    text-decoration: none;background-color: #fff; border-bottom: 1px solid #d9d6d2;
+    border-top: 1px solid #d9d6d2;/*margin-right:-1px;*/}
+    .col-md-3{padding:0px;}
+     .safelevel{font-size: 13px;color:#a6a6a6;margin-top: 20px;margin-left: 5px;}
+    .low{font-weight: bold;color:#de5c5c;margin-left:90px;}
+    .safeline{margin-left: 5px;} /*侧边栏结束*/
+      /*可用余额块开始*/
+    .article-r{height: 106px;background-color: #fff;padding: 0px;
+        border-bottom: 1px solid #e6e4e4; border-right: 1px solid #d9d6d2;}
+    .money{background-color: #fff;height:105px;padding-top: 30px;}
+    .money-btn{margin-top: 30px;background-color: #fff}
+    .moneyout:hover{color: rgb(239,91,91);}
+    .moneyout{margin-left: 50px;background-color: #ededed}
+    .moneyin{margin-left:50px;background-color:#c16918 }
+    .money .moneynum{color:#75c31a;}
+    .money h3{font-weight: bold;font-size: 15px;color:#878787;}
+    .money a{font-weight: bold;font-size: 30px;color: #ef5b5b}
+    .money a:hover{text-decoration: none;}
+     /*可用余额块end*/
+   
+    /*认证star*/
+    .authen{border-right: 1px solid #d9d6d2;}
+
+    .authen-m{height: 310px;width: 245px;border:1px solid #e8e8e8;float: right;margin-top:40px;background-color: #f9f9f9}
+    .mobile{display: block; margin-left:0px;text-align: center;margin-top: 15px;font-weight: bold;font-size: 15px;color:#585858;border-bottom: 1px dashed #c9c9c9;}
+    .mobile .mobile-w{display: block;margin-top:10px; margin-bottom: 10px;}
+    .mobile-add{margin-left: 20px;font-size: 14px;line-height: 30px;margin-top: 20px;}
+    .callerloc{color:#d76816;}
+    .mobile-num{color:#d76816;}
+    .button .btn{width: 135px;height: 42px;background-color:#e57928;margin-left: 35px;margin-top: 30px;color:#fff;}
+    .button .btn:hover{color:#1ffc3e;background-color: #e57928}
+    .authen-b{height: 310px;width: 245px;border:1px solid #e8e8e8;float: right;margin-top:40px;background-color: #f9f9f9;margin-right:110px;}
+    .authen-b .name-w{display: block;margin-top:10px; margin-bottom: 10px;}
+     .authen-m .name-w{display: block;margin-top:10px; margin-bottom: 10px;}
+     .col-md-7 {padding:0px;}
+    .mobile{display: block; margin-left:0px;text-align: center;margin-top: 15px;font-weight: bold;font-size: 15px;color:#585858;border-bottom: 1px dashed #c9c9c9;}
+    
+    .no-name{margin-left:67px;color:#aa9688;margin-top:40px;}
+     .button .name-btn{background-color: #fff;color:#d76816;border:1px solid #d76816;
+        margin-top:40px;} 
+        /*认证结束*/
+
+     
+    .footer .container-fluid { height:260px;background-color: #353b48;padding-right: 0px;padding-left: 0px;}
+.footer .bank_logo{height: 150px;border-bottom:1px solid rgb(71,77,89);}
+.bank_logo h3{color: #fff; margin-left:80px;padding-top: 30px;}
+.bank_img{width: 135px;height:46px;border-radius:5px;float: left;margin-left:45px;}
+.footbank{margin-left: 35px;display: block;padding-top: 10px;}
+.btd_footer {height: 115px;line-height: 115px;}
+.btd_footer>div{height: 30px;}
+.footer_last{height: 115px;padding-top: 20px;margin-right: 0px;}
+.footer_last p{font-weight: normal;color: #fff;font-size: 15px;line-height:40px;margin-right: 50px;}
+.bank_img{padding-left: 0px;}
+.btd_footer img{margin-left: 70px;margin-bottom: 30px;}
+
+
+
+
+
+
+/*fund-record st*/
+.clearfix:after{content:"";clear:both;display: block;visibility: hidden;height: 0;}
+    .col-xs-2{padding:0;}
+    .found-con .fund-money{border:none;}
+    .fund-money h3{color:#c16d20;}
+    .fund-money .fund-a{color:#c16d20;display: block;padding-top:10px;font-size: 25px;}
+    .found-con{height:900px;border-right:1px solid #dddcda;}
+    .fund-lab{color:#878787;}
+    .fund-btn{width:78px;height:28px;line-height:8px;color:#979797;background-color: #ebebeb;border-radius: 28px;margin-left:10px;}
+    .fund-btn:hover{color:#75c31a;}
+    .fund-btnclolor{background-color: #c16918;color: #fff;font-weight: 700;}
+    .fund-type{padding-bottom: 35px;border-bottom:1px dashed #dddcda;padding-top: 20px;}
+    .found-fr{float:right;color:#b7b7b7;}
+    .fund-input{width:100px;height:27px;background:url(../images/found-icon-data.png) no-repeat 85% center;}
+    .fund-input:hover{background-image: none;}
+    .btn-tran{height: 28px;line-height:8px;border-radius:2px;}
+    .btn-tran:hover{color:#51a402;}
+    .fund-tit{color:#878787;height:30px;line-height:30px;text-align: center;margin-top:25px;}
+    .fund-contents{text-align: center;vertical-align: center;height:98px;line-height:98px;border-bottom: 1px dashed #dddcda;}
+    .fund-contents li{margin-bottom: 80px;}
+    .btn-mon{height:32px;width:70px;border-radius: 32px;border:none;background-color:#da5944;font-weight: 700;color:#fff;font-size: 14px;margin-top:25px;line-height:18px;}
+    .btn-mon:hover{color:#51a402;}
+    .con-col{color:#444444;font-weight:700;font-size: 14px;}
+    .btn-mon-clo1{background-color: #2786c1;}
+    .btn-mon-clo2{background-color: #5ba019;}
+    .btn-mon-clo2:hover{color:#000;}
+    .btn-mon-clo3{background-color: #c16918;}
+    .font-paging{padding-top:50px;}
+    .btn-paging{background-color:#f5f5f5;border:1px solid #d3d3d3;color:#929292;margin-left:10px;}
+    .btn-paging:hover,.paging-active{background-color:#b6572e;border:1px solid #9f3f15;color:#fff;}
+    .fundicon-ok{background:url(../images/fund-icon-ok.png) no-repeat 75% center;}
+    .fundicon-no{background:url(../images/fund-icon-no.png) no-repeat 75% center;}
+
+
+/*fund-record ed*/
+/*automatic-bid st*/
+.state-btns{background-color: #f3f3f3;color: #c4762e;height: 40px;width: 81px;border:none;border-radius: 5px;font-size: 15px;font-weight: 700;margin-top:35px;}
+.state-btns-t{margin-top:30px;}
+.state-check{margin-top:25px;}
+.automatic-red{color: #f38484;margin-left:25px;}
+.automatic-red em{font-size:20px;font-weight:800;}
+.form-group1 input{height:57px;width:385px;margin-left: 10px;}
+.automatic-inputs{margin-top:35px;}
+.form-group1 select{height:57px;width:160px;margin-left: 10px;margin-right:50px;}
+.automatic-way select{height:57px;width:385px;margin-left: 10px;}
+.btn-automatic-inputs{background-color:#ca7222;color:#fff;font-size:18px;}
+.btn-automatic-inputs:hover{color:#75c31a;}
+
+.automatic-prompt{height:90px;width:100%;background-color: #fffdea;padding:10px 20px;color:#ca7222;margin-top:55px;}
+.automatic-prompt h4{line-height: 40px;color:#ca7222;font-weight:700;}
+
+.automatic-prompt p{color:#898989;}
+.automatic-tops{margin-top:40px;}
+.form-group1 label{position:relative;}
+.automatic-after{position:absolute;right:5px;top:35%;color: #b2b2b2;}
+.form-group1 select{position:relative;background:url(../images/automatic-triangle.png) no-repeat right top;appearance:none;-webkit-appearance:none;}
+.automatic-afters{position:absolute;right:0;top:0;color:#b2b2b2;width:52px;height:57px;background-color:#f6f6f6;border-left:1px solid #cecece;}
+
+
+
+/*automatic-bid ed*/
+
+
+
+.btn:hover {
+    background-color: #b6572e;
+    color: #fff;
+}
+
+
+
+  /* zhongxinbufen */
+
+.record{height: 185px;background-color: #ffffff;border-right:1px solid #d9d6d2;}
+   .attempt{height: 435px;background-color: #f9f9f9;border-right:1px solid #d9d6d2;border-top:1px solid #d9d6d2;border-bottom:1px solid #d9d6d2;}
+   .herald{height: 285px;background-color: #ffffff;border-right:1px solid #d9d6d2;}
+   .record img{display: inline-block;float:left;margin-top: 55px;margin-left: 40px;}
+   .record h4{display: inline-block;margin-top: 65px;margin-left: 15px;margin-bottom: 5px;font-weight: bolder;color:#b1b1b1;}
+   .record span{margin-left: 15px;font-weight: bolder;font-size: 18px;}
+   .record em{border:1px solid #cd8a4d;display: inline-block;height:26px;width: 138px;text-align: center;color:#cd8a4d;line-height: 26px;margin-left: 10px;margin-top: 8px;}
+   .attempt h3{display: inline-block;margin-left: 20px;font-weight: bold;font-size: 15px;color:#878787;margin-top: 45px;}
+   .attempt img{margin-top: 45px;}
+   .herald h3{margin-left: 20px;font-weight: bold;font-size: 15px;color:#878787;margin-top: 40px;}
+   .details{margin-top: 45px;}
+   .details img{display: inline-block;float:left;margin-left: 5px;margin-right: 10px;}
+   .details h4{font-size: 12px;font-weight: bold;color:#878787;line-height: 35px;}
+   .details h4 a{display: inline-block;color:#111111;margin-left: 15px;}
+   .details p{color:#727272;font-weight: bold;}
+   .details span{color:#cd8a4d;margin-right: 15px;font-weight: bolder;}
+   .details em{color:#58a200;font-weight: bolder;}
+   .details>a{color:#cd8a4d;border:1px solid #cd8a4d;display: inline-block;margin-top: 15px;height:28px;width: 65px;text-align: center;border-radius: 5px;}
+   
+   /*account-details*/
+
+   .shanghai-house{height: 125px;background-color: #ffffff;border-right:1px solid #d9d6d2;}
+   .income{height: 100px;background-color: #f9f9f9;border-right:1px solid #d9d6d2;border-top:1px solid #d9d6d2;border-bottom:1px solid #d9d6d2;}
+   .refund{background-color: #ffffff;border-right:1px solid #d9d6d2;}
+
+
+
+
+
+
+
+
+   
+
+
+        
+
+
+
+
+

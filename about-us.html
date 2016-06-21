@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>about-us.html</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/affirm.css">
+	<script src="js/TouchSlide.1.1.js"></script>
+	<style>
+ body{background-color: #fff;font-family: "Microsoft Yahei";font-size: 14px;padding-top:0;}
+    ul,ol{list-style: none;}
+ .fl{float:left;}
+ .fr{float: right;}
+ 
+.col-3{box-sizing:border-box;-webkit-box-sizing:border-box;}
+.col-3{width: 25%;float: left;padding: 10px;}
+.nav{height: 70px;background-color: #353b48;width: 100%;}
+.nav h4{height: 70px;line-height: 50px;float: left;}
+.navbar{float: right;padding-right: 0;}
+.navbar li{float: left;}
+.navbar li a{display: inline-block; height: 70px;line-height: 70px;text-align: center;width: 100px;color:#c5dee4;}
+.navbar li a:hover{background-color:#9f4f04;text-decoration: none;color:#fff;}
+.nav-button{float: right; margin-top: 15px;}
+.nav-button input{width: 65px;height: 35px;border-radius: 5px;border:1px solid #5c626f;background-color:#353b48;}
+.nav-button input:hover{color:#fff;background-color:#9f4f04;border:1px solid #9f4f04;font-weight:700;}
+
+
+ .banner img{width: 100%;margin-top: -20px;}
+ .team h2{color:#8b3914;margin-top: 30px;margin-bottom: 20px;font-weight: bold;}
+ .team li{background-color: #f4f4f4;height: 185px;margin-top: 43px;}
+ .team li .col-md-2{padding-left: 0px;}
+.team li .col-md-10 h3{color: #8b3914;font-weight: bold;margin-left: 10px;margin-bottom: 25px;margin-top:30px;}
+.team li .col-md-10 p{color:#707070;margin-left: 10px;}
+.team-footer span{display: inline-block;  border: 2px solid #c5c5c5;height: 50px;width: 50px;border-radius: 50px;font-size: 36px;line-height: 40px;margin: 25px;font-weight: bold; }
+.team-footer a{color: #c5c5c5; }
+.team-footer span:hover{color: #6a2b0f;text-decoration: none;border-color: #6a2b0f;}
+.team-footer .active{color: #6a2b0f;text-decoration: none;border-color: #6a2b0f;}
+.photo{background-color:#404859;padding-bottom: 50px;padding-top: 25px;}
+.photo h1{color: #fff; font-weight: bold;background: url(images/aboutus-photo1.png) no-repeat 38% center;margin-top: 30px;font-size: 42px;margin-bottom: 50px;}
+.aboutphoto .photo-text{margin-top: 20px;font-size: 16px;color: #fff;}
+.photo-list {margin-top: 25px;}
+.question h2{margin-top: 50px; color: #8b3914;font-weight: bold;border-bottom: 1px solid #dbdbdb;padding-bottom: 25px;width: 30%;margin-left:35%;}
+.question .pl-title {padding-left: 0;}
+ .question .pl-title .ask{width: 56px;height: 46px; background-color: #f1f1f1;color: #7f7f7f;font-size: 12px;text-align: center;line-height: 46px;margin-bottom: 0px;}
+
+.question .pl-title .answer{ width: 56px;height: 46px;background-color: #e2cfc0;color: #8a2b00;font-size: 12px;line-height: 46px;text-align: center;}
+.question .q-text h5{color: #656464;font-weight: bold;margin-left: -30px;}
+.question .q-text p{color: #7f7f7f;font-size: 12px;margin-top: 30px;margin-left: -30px;}
+.question .q-list{margin-top: 20px;}
+.question .qr-text{padding-right: 0;}
+.question .qr-text h5{color: #656464;font-weight: bold;margin-left: -30px;}
+.question .qr-text p{color: #7f7f7f;font-size: 12px;margin-top: 30px;margin-left: -30px;}
+.ques-lists li{margin-top: 40px;margin-bottom: 40px;}
+.address{margin-top: 50px;margin-bottom: 0;}
+.address .add-r{padding-left: 0;}
+.address .add-r img{width: 100%;height: 450px;}
+.address li{width: 100%;margin-left: 0;}
+.address .col-md-4{background-color: rgb(241,241,241);height:450px;text-align: left;padding-left: 8%;padding-top: 20px;line-height: 70px;}
+.address .add-list{margin-bottom: 0;}
+.address h2{color: #6c6b6b;font-weight: bold;font-size: 36px;}
+.address p{color: #565656;padding-left: 45px;}
+.address .add-list1{background: url(images/aboutus-tel.png) no-repeat 0 center;color: #993e16;font-size: 28px;}
+.address .add-list2{background: url(images/aboutus-phone.png) no-repeat 0 center;color: #636363;font-size: 25px;}
+.address .add-list3{background: url(images/aboutus-address.png) no-repeat 0 center;font-size: 17px;}
+.address .add-list4{background: url(images/aboutus-mail.png) no-repeat 0 center;font-size: 18px;}
+
+.navbar .active{background-color: #9f4f04;}
+.navbar .btn-tuichu{color: #66665c;border: 1px solid #5c626f;}
+.navbar .btn-tuichu:hover{background-color: #9f4f04;color: #fff}
+	</style>
+
+
+</head>
+<body>
+<div class="nav clearfix">
+	<div class="container">
+		<h4><a href="myindex.html"><img src="images/detail-nav.png" alt=""></a></h4>
+		<ul class="navbar list-unstyled">
+			<li><a href="myindex.html">首页</a></li>
+			<li><a href="invest-record.html">投资项目</a></li>
+			<li><a href="borrow-money.html">我要借款</a></li>
+			<li class="active"><a href="about-us.html">关于我们</a></li>
+			<li><a href="news.html">新闻公告</a></li>
+			<div class="nav-button">
+			<a href="baotuodai-login.html" class="btn btn-tuichu">退出</a><!-- <input type="button" value="退出"> --></div>
+		</ul>
+		
+	</div>
+</div>
+<!-- nav  ed -->
+<div class="banner">
+	<img src="images/aboutus-banner.jpg" alt="">
+</div>
+<div class="team">
+	<div class="container">
+		<h2 class="text-center">团队介绍</h2>
+		<ul class="character list-unstyled">
+			<li class="rol">
+				<div class="col-md-2 pull-left">
+					<img src="images/aboutus-team1.png" alt="">
+				</div>
+				<div class="col-md-10">
+					<h3>关羽 CTO</h3>
+					<p>刘备，汉景帝之子中山靖王刘胜的后裔。刘备的祖父刘雄被举为孝廉，官至东郡范令。刘备的父亲刘弘早亡，少年刘备与母亲以织席贩履为业，生活非常艰苦。刘备家
+屋舍东南角篱上有一桑树高有五丈于，从远处看上去就好像车盖一样，来往的人都觉得这棵树长得不像凡间之物，认为此家必出贵人。刘备小时候与同宗小孩在树下玩
+乐，指着桑树说：“我将来一定会乘坐这样的羽葆盖车。</p>
+				</div>
+			</li>
+			<li class="rol">
+				<div class="col-md-2 pull-left">
+					<img src="images/aboutus-team2.png" alt="">
+				</div>
+				<div class="col-md-10">
+					<h3>刘备 CEO</h3>
+					<p>公元184年（中平元年），汉室宗亲刘备在涿县组织起了一支义勇军参与扑灭黄巾军的战争，关羽与张飞同在其中。刘备辗转担任许多官职后，投奔昔日同窗公孙瓒，被封
+为平原国相，任关羽、张飞为别部司马，分统部曲。三人情同兄弟，常一起同床而睡，当刘备坐下时，关、张二人更不辞辛劳随身守护。</p>
+				</div>
+			</li>
+			<li class="rol">
+				<div class="col-md-2 pull-left">
+					<img src="images/aboutus.team3.png" alt="">
+				</div>
+				<div class="col-md-10">
+					<h3>张飞 CRO</h3>
+					<p>公元184年（中平元年），汉室宗亲刘备在涿县组织起了一支义勇军参与扑灭黄巾军的战争，关羽与张飞同在其中。刘备辗转担任许多官职后，投奔昔日同窗公孙瓒，被封
+为平原国相，任关羽、张飞为别部司马，分统部曲。三人情同兄弟，常一起同床而睡，当刘备坐下时，关、张二人更不辞辛劳随身守护。</p>
+				</div>
+			</li>
+		</ul>
+		<div class="text-center rol team-footer">
+				<a href=""><span class="text-center"><</span></a>
+	<a href=""><span class="text-center active">></span></a>
+			</div>
+	</div>
+</div>
+<!-- team ed -->
+<div class="photo">
+	<div class="container">
+		<div class="aboutphoto">
+			<h1 class="text-center">相关照片</h1>
+			<ul class="mainphoto list-unstyled">
+				<li class="row">
+					<div class="col-md-5">
+                     <div class="col-md-6 text-center"><img src="images/aboutus-photo01.png" alt="">
+                      <p class="photo-text">营业执照</p>
+                     </div>
+                   <div class="col-md-6 text-center"><img src="images/aboutus-photo02.png" alt="">
+                      <p class="photo-text">税务登记证</p>
+                     </div>
+					</div>
+					<div class="col-md-7"> <div class="col-md-4 text-center"><img src="images/aboutus-photo03.png" alt="">
+                      <p class="photo-text">组织结构代码证</p>
+                     </div>
+                     <div class="col-md-4 text-center"><img src="images/aboutus-photo04.png" alt="">
+                      <p class="photo-text">荣誉证书</p>
+                     </div>
+                      <div class="col-md-4 text-center"><img src="images/aboutus-photo05 .png" alt="">
+                      <p class="photo-text">荣誉证书</p>
+                     </div>
+                     </div>
+				</li>
+				<li class="row photo-list">
+					<div class="col-md-5">
+                     <div class="col-md-6 text-center"><img src="images/aboutus-photo06.png" alt="">
+                      <p class="photo-text">办公室</p>
+                     </div>
+                   <div class="col-md-6 text-center"><img src="images/aboutus-photo07.png" alt="">
+                      <p class="photo-text">办公室</p>
+                     </div>
+					</div>
+					<div class="col-md-7"> <div class="col-md-4 text-center"><img src="images/aboutus-photo08.png" alt="">
+                      <p class="photo-text">办公室</p>
+                     </div>
+                     <div class="col-md-4 text-center"><img src="images/aboutus-photo09.png" alt="">
+                      <p class="photo-text">办公室</p>
+                     </div>
+                      <div class="col-md-4 text-center"><img src="images/aboutus-photo10.png" alt="">
+                      <p class="photo-text">办公室</p>
+                     </div>
+                     </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- photo ed -->
+<div class="question">
+	<div class="container">
+		<div class="question-list">
+			<h2 class="text-center">您可能碰到的问题</h2>
+			<ul class="ques-lists list-unstyled">
+				<li class="row">
+					<div class="col-md-6 q-list">
+						<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 q-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>
+						
+					</div>
+					<div class="col-md-6 q-list">
+					<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 qr-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>	
+					</div>
+				</li>
+<li class="row">
+					<div class="col-md-6 q-list">
+						<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 q-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>
+						
+					</div>
+					<div class="col-md-6 q-list">
+					<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 qr-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>	
+					</div>
+				</li>
+<li class="row">
+					<div class="col-md-6 q-list">
+						<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 q-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>
+						
+					</div>
+					<div class="col-md-6 q-list">
+					<div class="col-md-2 pl-title">
+							<p class="ask">问</p>
+							<p class="answer">答</p></div>
+							<div class="col-md-10 qr-text">
+								<h5>邀参加互联网金融监管与发展高峰论坛暨行业CEO峰会</h5>
+						<p>12月12日，由温州理财行业协会、温州市股权投资行业协会、科技金融时报主办的“互联
+网金融监管与发展高峰论坛暨行业CEO峰会”在温</p>
+							</div>	
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- question ed -->
+<div class="address">
+		<ul class="add-list list-unstyled">
+			<li class="row clearfix">
+				<div class="col-md-4 add-l">
+					<h2>联系我们</h2>
+					<p class="add-list1">400-820-8820</p>
+					<p class="add-list2">021-547862</p>
+					<p class="add-list3">上海市浦东新区金桥镇金杨路5号</p>
+					<p class="add-list4">baoluo@163.com</p>
+				</div>
+				<div class="col-md-8 add-r"><img src="images/aboutus-map.jpg" alt=""></div>
+			</li>
+		</ul>
+	</div>
+	<!-- map ed -->
+ 
+<!-- footer st -->
+<footer>
+	
+	<div class="bank">
+	<div class="container">
+		<h4>合作伙伴</h4>
+		<ul class="friend pull-left row col-xs-12">
+			<li class="pull-left"><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+		</ul></div>
+		</div>
+		<div class="foot">
+		<div class="container">
+			<a href="myindex.html" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+		</div>
+	
+</div>
+</footer>
+
+<!-- footer ed -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

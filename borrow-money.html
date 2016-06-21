@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<meta charset="UTF-8">
+	<title>borrow-money.html</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/affirm.css">
+	<style>
+	body{background-color: #fff;font-family: "Microsoft Yahei";font-size: 14px;padding-top:0;}
+    ul,ol{list-style: none;}
+.nav{height:70px;background-color: #353b48;width: 100%;padding-top:0px;padding-right: 0px;}
+.nav h4{height: 70px;line-height: 50px;float: left;padding-top:0px;}
+.navbar{float: right;padding-right: 0;}
+.navbar .active{background-color: #9f4f04;}
+.navbar li{float: left;}
+.navbar li a{display: inline-block; height: 70px;line-height: 70px;text-align: center;width: 100px;color:#c5dee4;}
+.navbar li a:hover{background-color:#9f4f04;text-decoration: none;color:#fff;}
+.nav-button{float: right; margin-top: 20px;}
+.nav-button input{width: 65px;height: 35px;border-radius: 5px;border:1px solid #5c626f;background-color:#353b48;}
+.nav-button input:hover{color:#fff;background-color:#9f4f04;border:1px solid #9f4f04;font-weight:700;}
+		.btn-primary-gray{color:#79808f;background-color: transparent;border-color:#5c626f;}
+		.btn-primary-gray:focus{color:#838da3;background-color: transparent;border-color:#dddddd;}
+		.navbar-gap{margin-left:30px;}
+
+		.banner{background: url(images/banner-bg-lend.png) no-repeat center center;height:524px;}
+		.article{height:750px;background:url(images/aside-bg-lends-square.png) no-repeat center center;}
+		.banner h1{text-align:right;color:#e9e9e9;height:100px;line-height:100px;margin-top:80px;font-weight: 800;font-size:42px;}
+		.banner em{color:#ffd700;font-style: normal;}
+		.banner span{display:block;font-size:16px;color:#da7e83;font-weight: 400;}
+		.banner img{margin-right:10px;}
+
+		.hotlink{height:274px;background:url(images/hot-link-lend.png) no-repeat center center;}		
+		.link-icon li{width:16.66%;float: left;text-align: center;}
+		.link-icon a:before{content:"";display:block;height:68px;width:68px;background:url(images/refer-icon.png) no-repeat center center;margin-left:auto;margin-right:auto;margin-bottom:10px;transition:all 0.5s ease;-webkit-background-size: 68px 68px;
+			background-size: 68px 68px;}
+		.link-icon li:nth-child(2) a:before{background-image: url(images/tel-icon.png);}
+		.link-icon li:nth-child(3) a:before{background-image: url(images/examine-icon.png);}
+		.link-icon li:nth-child(4) a:before{background-image: url(images/right-icon.png);}
+		.link-icon li:nth-child(5) a:before{background-image: url(images/horn-icon.png);}
+		.link-icon li:nth-child(6) a:before{background-image: url(images/release-icon.png);}
+
+		.link-icon li:nth-child(1) a:hover:before,.link-icon .active a:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+		.link-icon li:nth-child(2) a:hover:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+		.link-icon li:nth-child(3) a:hover:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+		.link-icon li:nth-child(4) a:hover:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+		.link-icon li:nth-child(5) a:hover:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+		.link-icon li:nth-child(6) a:hover:before{-webkit-background-size:60px 60px;
+		background-size:60px 60px;}
+
+		.link-icon a{display: block;}
+		.hot-title{height:50px;line-height:50px;padding-left:85px;margin-top:60px;color:#565656;}
+		.borrow-submit{padding:55px 30px 50px 10px;background-color:#f5f5f5;border:1px solid #e5e5e5;margin-top:45px;height:628px;}
+		.borrow-submit label{height:55px;line-height:55px;color:#525252;}
+		.borrow-submit input{height:55px;border-radius:0;}
+		.borrow-aside:before{content:"";width:143px;height:142px;display: block;background:url(images/pen-icon.png) no-repeat center center;margin-left: auto;margin-right:auto;margin-bottom: 10px;margin-top:170px;transform:all 1s;}
+		.borrow-aside{font-size: 16px;color:#565656;line-height: 25px;font-weight: 800;}
+		.borrow-aside a{color:#565656;}
+		.borrow-aside a:hover{color:#9c6d43;text-decoration: none;}
+		.borrow-aside span{display: block;}
+		.col-xs-7{padding:0;}
+
+		.form-horizontal .form-group{margin-bottom:30px;}
+		.borrow-verif{float: right;}
+		.btn-danger-borrow{background-color: #ac5a10;color:#fff;transform:all 1s;}
+		.btn-danger-borrow:hover{background-color: #b4661f;color:#c5dee4;transform:all 1s;}
+		.pledge-tr-po{position: relative;}
+		.pledge-triangle-bottom{border-left:2px solid #b87436;border-bottom:2px solid #b87436;transform:rotate(-45deg);display:inline-block;width:20px;height:20px;position: absolute;right:30px;top:25%;}
+		.pledge-tr-im select{height:55px;border-radius:0;background:url(images/borrow-select-icon.png) no-repeat right center;appearance:none;-webkit-appearance:none;background-color: #fff;}
+		.navbar .btn-tuichu{color: #66665c;border: 1px solid #5c626f;}
+		.navbar .btn-tuichu:hover{background-color: #9f4f04;color: #fff}
+
+
+	</style>
+</head>
+<body>
+	
+  <div class="nav clearfix">
+	<div class="container">
+		<h4><a href="myindex.html"><img src="images/detail-nav.png" alt=""></a></h4>
+		<ul class="navbar list-unstyled">
+			<li><a href="myindex.html">首页</a></li>
+			<li><a href="invest-record.html">投资项目</a></li>
+			<li class="active"><a href="borrow-money.html">我要借款</a></li>
+			<li><a href="about-us.html">关于我们</a></li>
+			<li><a href="news.html">新闻公告</a></li>
+			<div class="nav-button">
+			<a href="baotuodai-login.html" class="btn btn-tuichu">退出</a><!-- <input type="button" value="退出"> --></div>
+		</ul>
+		
+	</div>
+</div>
+<!-- nav  ed -->
+	<div class="banner">
+		<div class="container">
+			
+				<h1 class="hidden-xs hidden-sm">专业化的服务<br>房屋抵押借款、<em>放款快</em>、<em>利率低</em>
+				<span><img src="images/plaint-icon.png" alt="">请您放心，您提交的信息经过严格的加密方式处理</span>
+				</h1>
+			
+		</div>
+	</div>
+	<div class="article">
+		<div class="container row">
+			<div class="col-xs-7">
+				<h5 class="borrow-aside text-center"><a href=""><span>提交您的资料</span>我们会在三个工作日与你联系</a></h5>
+			</div>
+			<div class="col-xs-5 borrow-submit">
+				<form action="invest-list.html" method="get" class="form-horizontal">
+					<div class="form-group has-success has-feedback">
+						<label class="col-xs-3 text-right">您的姓名</label>
+						<div class="col-xs-9">
+						<input type="text" class="form-control" placeholder="如张三、李四">
+						</div>
+					</div>
+					<div class="form-group has-success has-feedback">
+						<label class="col-xs-3 text-right">联系方式</label>
+						<div class="col-xs-9">
+						<input type="text" class="form-control" placeholder="请输入您的手机号码">
+						</div>
+					</div>
+					<div class="form-group has-success has-feedback">
+						<label class="col-xs-3 text-right">抵 押 物</label>
+						<div class="col-xs-9 pledge-tr-im">
+
+						<select name="" id="" class="form-control input-lg pledge-tr-po">
+							<option value="">汽车</option>
+							<option value="">房子</option>
+
+						</select>
+
+						</div>
+					</div>
+					<div class="form-group has-success hass-feedback">
+						<label class="col-xs-3 text-right">借款金额</label>
+						<div class="col-xs-9">
+						<input type="text" class="form-control" placeholder="输入你想借款的金额">
+						</div>
+					</div>
+					<div class="form-group has-success has-feedback">
+						<label class="col-xs-3 text-right">验 证 码</label>
+						<div class="col-xs-9">
+						<div class="col-xs-7">
+						<input type="text" class="form-control" placeholder="输入右侧的验证码">
+						</div>
+						<img src="images/verification-code.png" alt="" class="borrow-verif">
+						</div>
+					</div>
+					<div class="form-group">
+					<div class="col-xs-9 col-xs-offset-3">
+						<input type="submit" value="确认提交" class="btn btn-block btn-danger-borrow btn-lg">
+					</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="hotlink">
+		<div class="container">
+			<h4 class="hot-title">借款流程</h4>
+			<ul class="link-icon">
+				<li class="active"><a href="">提交资料</a></li>
+				<li><a href="">工作人员联系</a></li>
+				<li><a href="">审核资料</a></li>
+				<li><a href="">审核完成</a></li>
+				<li><a href="">线上发标</a></li>
+				<li><a href="">满标后放款</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- footer st -->
+<footer>
+	
+	<div class="bank">
+	<div class="container">
+		<h4>合作伙伴</h4>
+		<ul class="friend pull-left row col-xs-12">
+			<li class="pull-left "><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+			<li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+		</ul></div>
+		</div>
+		<div class="foot">
+		<div class="container">
+			<a href="" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+		</div>
+	
+</div>
+</footer>
+
+<!-- footer ed -->
+
+
+	<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

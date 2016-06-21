@@ -1,0 +1,37 @@
+
+
+/*footer st*/
+footer{background-color: #242c33;width: 100%}
+.bank {border-bottom: 1px solid #898A8C; margin:0;padding: 0;overflow: hidden;}
+.bank h4{padding-top: 20px;color: #fff;}
+.friend{margin:0;padding: 0;padding-bottom: 20px;}
+.friend li{padding-top: 10px;}
+.friend li:nth-child(2) a{margin-right: 31px;margin-left: 31px;}
+.friend li:nth-child(4) a{margin-right: 31px;margin-left: 31px;}
+.friend li:nth-child(6) a{margin-right: 31px;margin-left: 31px;}
+.foot{margin-top: 20px;padding-bottom: 20px;}
+.foot p{color: #747779;}
+/*foot ed*/
+
+
+
+/*自适应屏幕小于768px*/
+@media screen and (max-width: 768px){
+	
+
+
+
+	.bank h4{padding-top: 5px;margin:0;font-size: 11px;}
+	.friend{padding-bottom: 5px;}
+	.friend li{padding:0;margin: 0;}
+	.friend li:nth-child(2) a{margin-right: 4px;margin-left: 4px;}
+	.friend li:nth-child(4) a{margin-right: 4px;margin-left: 4px;}
+	.friend li:nth-child(6) a{margin-right: 4px;margin-left: 3px;}
+	.friend li img{height: 15px;width: auto;}
+	.foot{margin-top: 5px;padding-bottom: 0;}
+	.foot img{height:10px;width: auto;float: left; }
+	.foot p {font-size: 8px; padding:0;margin:0;}
+
+}
+
+/*自适应屏幕小于768px*/

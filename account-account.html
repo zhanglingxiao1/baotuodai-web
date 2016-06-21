@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>account-account.html</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bool.css">  
+<link rel="stylesheet" href="css/affirm.css">
+  <style>
+ body{background-color: #fff;font-family: "Microsoft Yahei";font-size: 14px;padding-top:0;}
+    ul,ol{list-style: none;}
+.nav{height:70px;background-color: #353b48;width: 100%;padding-top:0px;padding-right: 0px;}
+.nav h4{height: 70px;line-height: 50px;float: left;padding-top:10px;}
+.navbar{float: right;padding-right: 0;}
+.navbar li{float: left;}
+.navbar li a{display: inline-block; height: 70px;line-height: 70px;text-align: center;width: 100px;color:#c5dee4;}
+.navbar li a:hover{background-color:#9f4f04;text-decoration: none;color:#fff;}
+.nav-button{float: right; margin-top: 20px;}
+.nav-button input{width: 65px;height: 35px;border-radius: 5px;border:1px solid #5c626f;background-color:#353b48;}
+.nav-button input:hover{color:#fff;background-color:#9f4f04;border:1px solid #9f4f04;font-weight:700;}
+
+
+
+ /*account-details*/
+
+   .shanghai-house{height:100px;background-color: #ffffff;border-right:1px solid #d9d6d2;}
+   .income{height: 100px;background-color: #f9f9f9;border-right:1px solid #d9d6d2;border-top:1px solid #d9d6d2;border-bottom:1px solid #d9d6d2;}
+   .refund{background-color: #ffffff;border-right:1px solid #d9d6d2;}
+   .shanghai-house h3{line-height:100px;margin-left: 80px;display: inline-block;color:#585858;font-weight: 700;}
+   .income h4{display:block;padding-top:10px;font-size: 14px;}
+   .income p{display: inline-block;margin-top: 10px;color:#c16d20;font-size: 20px;font-weight: 700;}
+   .income span{display: inline-block;margin-top: 10px;font-size: 20px;color:#444444;font-weight: 700;}
+   .income em{display: inline-block;margin-top: 10px;font-size: 15px;color:#444444;font-weight: 700;}
+   .border-x{border-right: 1px solid #CCC5C5;margin-top: 15px;}
+   .edge{padding:0;}
+   .edge-x{padding:0;}
+   .income .wordes{padding-top: 25px;}
+   .square{height: 236px;width: 275px;border:1px solid #C5BFBF;display: inline-block;margin-top:55px;border-bottom:none;}
+   .square h3{height:140px;background-color: #f8f8f8;height:63px;line-height: 62px;border-bottom:1px solid #C5BFBF; color:#585858;font-weight: bold;font-size: 18px;}
+   .repayment{height:130px;line-height: 25px;}
+   .repayment h4{margin-top: 30px;padding-bottom: 10px;font-weight: 700;font-size: 14px;color:#918f8f;}
+   .repayment span{font-size:20px;font-weight: bold;color:#e56303;}
+   .repayment p{padding-top: 14px;font-size: 12px;padding-bottom: 5px;font-weight: 700;color: #cbcbcb;}
+   .btn-success{height:50px;width: 100%;background-color: #0d9003;color:#fff;border-radius: 0;border: none;}
+
+
+    .btn-aa{margin-top:-4px;padding:15px 12px;border:1px solid #ececec;}
+ .btn-ab{margin-top:-4px;padding:15px 12px;border:1px solid #ececec;}
+
+   .repayment a{font-size:16px;}
+   .time-d{display: inline-block;background-color: #f8f8f8;height:30px;width: 205px;margin-top:12px;line-height: 30px;margin-right: 60px;}
+   .btn-success:before{content: "";display: inline-block;border:5px solid transparent;border-left-color: #fff;border-bottom-color: #fff;height: 12px;width: 20px;transform:rotate(-45deg) ;margin-right: 10px;margin-bottom: 5px;}
+   .btn-wait{height:51px;width: 100%;background-color: #CCCBCB;color:#7a7a7a;border-radius: 0;position: relative;}
+   .btn-wait:before{content:"";display: inline-block;border:3px solid #7a7a7a;height:21px;width: 21px;border-radius: 21px;margin-top: 5px;margin-right: 5px;}
+   .btn-wait:after{content:"";display: inline-block;border-right:1px solid #7a7a7a;height:6px;width: 4px;border-bottom:1px solid #7a7a7a;position: absolute;left:99px;top:27px;}
+
+.account-height{height: 900px;}
+
+
+
+  </style>
+
+</head>
+<body>
+ <div class="nav clearfix">
+  <div class="container">
+    <h4><img src="images/detail-nav.png" alt=""></h4>
+    <ul class="navbar list-unstyled">
+      <li><a href="myindex.html">首页</a></li>
+      <li><a href="invest-record.html">投资项目</a></li>
+      <li><a href="borrow-money.html">我要借款</a></li>
+      <li><a href="about-us.html">关于我们</a></li>
+      <li><a href="news.html">新闻公告</a></li>
+      <div class="nav-button"><input type="button" value="退出"></div>
+    </ul>
+    
+  </div>
+</div>
+<!-- nav  ed -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 article-l">
+    <ul class="user">
+     <li class="userw">
+       <img src="images/user.png.png" alt="">
+        <li class="userlist">您好<h3>第一组</h3>
+         </li>
+     </li>
+    </ul>
+    </div>
+  <div  class="col-md-9 article-r">
+        <div  class="col-md-4  money">
+          <h3>可用余额 <a href="">1,000.00元</a></h3>
+        </div>
+         <div  class="col-md-4  money">
+           <h3>已获得 <a href="" class="moneynum">230.00元 </a>收益</h3>
+         </div>
+          <div  class="col-md-4 money-btn">
+          <form action="" class="">
+            <div class="form-group   ">
+      <input type="submit" value="充值" class="btn moneyin">
+      <input type="submit" value="提现" class="btn moneyout"></div>
+            </form>
+            </div>
+  </div>
+  
+ </div>
+
+  <div class="row found-con">
+
+  <div class="col-md-3 sidebar account-height">
+  <ul class="sidebar-menu menu clearfix">
+        <li><a href="account.html" class="">我的账号</a></li>
+        <li><a href="my-invest.html" class="">我的投资</a></li>
+        <li><a href="fund-record.html" class="" class="automatic-bid-activer">资金记录</a></li>
+        <li><a href="my-message.html" class="">我的信息</a></li>
+        <li><a href="automatic-bid.html" class="">自动投标</a></li>
+        <li><a href="recompose-pass.html" class="">修改密码</a></li>
+        <h3 class="safelevel">账户安全等级<span class="low">低</span></h3>
+         <h3 class="safeline"><img src="images/safe.png" alt=""></h3>
+  </ul>
+  </div>     
+  <!-- content st  -->
+
+         <div class="col-md-9 sidebar">
+                <div class="row shanghai-house">
+
+                       <h3> <img src="images/house.png" alt="">  上海市闵行区公寓住宅201㎡市值690万抵押借款440万</h3>
+                </div>
+                <div class="row income">
+                     <div class="col-md-3 text-center">
+                           <div class="border-x">
+                                  <h4>投资金额</h4>
+                                  <p>254,786.00元</p>
+                           </div>
+                     </div>
+                     <div class="col-md-6 edge">
+                            <div class="col-md-4 edge-x">
+                                <div class="border-x text-center">
+                                  <h4>年化收益率</h4>
+                                  <p>18.00%</p>
+                                </div>  
+                            </div>
+                            <div class="col-md-4 edge-x">
+                                <div class="border-x text-center">
+                                  <h4>借款期限</h4>
+                                  <span>六个月</span>
+                                </div>   
+                            </div>
+                            <div class="col-md-4 edge-x">
+                                <div class="border-x text-center">
+                                  <h4>还款方式</h4>
+                                  <span>付息还本</span>
+                                </div>  
+                            </div>
+                     </div>
+                     <div class="col-md-3 text-center">
+                                  <h4 class="wordes">投资时间</h4>
+                                  <em>2016-4-9 20:17:20</em>
+                     </div>
+                </div>
+                <div class="row refund">
+                    <div class="col-md-6 text-center">
+                       <div class="square">
+                           <h3>第一期</h3>
+                           <div class="repayment">
+                               <h4>还款金额</h4>
+                               <span>254,786.00元</span>
+                               <p>编号：21412221005514448311</p>
+                               <a href="" class="btn btn-success btn-aa">完成还款</a>
+                           </div>
+                           <div class="time-d"><p>还款时间：2016-4-10 10:00:30</p></div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                         <div class="square">
+                           <h3>第二期</h3>
+                           <div class="repayment">
+                               <h4>还款金额</h4>
+                               <span>254,786.00元</span>
+                               <p>编号：21412221005514448311</p>
+                               <a href="" class="btn btn-success btn-aa">完成还款</a>
+                           </div>
+                           <div class="time-d"><p>还款时间：2016-4-10 10:00:30</p></div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                       <div class="square">
+                           <h3>第三期</h3>
+                           <div class="repayment">
+                               <h4>还款金额</h4>
+                               <span>254,786.00元</span>
+                               <p>编号：21412221005514448311</p>
+                               <a href="" class="btn btn-wait btn-ab">等待还款</a>
+                           </div>
+                           <div class="time-d"><p>还款时间：2016-4-10 10:00:30</p></div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                         <div class="square">
+                           <h3>第四期</h3>
+                           <div class="repayment">
+                               <h4>还款金额</h4>
+                               <span>254,786.00元</span>
+                               <p>编号：21412221005514448311</p>
+                               <a href="" class="btn btn-wait btn-ab">等待还款</a>
+                           </div>
+                           <div class="time-d"><p>还款时间：2016-4-10 10:00:30</p></div>
+                       </div>
+                    </div>
+                </div>
+                </div>
+     </div>   
+
+<!-- content ed -->
+
+
+</div>
+      </div>
+ </div> 
+
+
+
+   
+</div>
+<footer>
+  
+  <div class="bank">
+  <div class="container">
+    <h4>合作伙伴</h4>
+    <ul class="friend pull-left row col-xs-12">
+      <li class="pull-left"><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+    </ul></div>
+    </div>
+    <div class="foot">
+    <div class="container">
+      <a href="" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+    </div>
+  
+</div>
+</footer>
+
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.row>div{ height: 200px; border-top:1px solid #916817;}
+	.form-horizontal .glyphicon{top:0;}
+	.btn-block{ padding-top: 30px; padding-bottom: 30px;}
+	.navbar-brand{ padding-top: 0;}
+	body{ padding-top:50px;background-color: #f0f0f0;}
+	h2,h4,h3{color: #333}
+	
+	.navbar-nav div{margin-left: 15px}
+	.navbar-nav{padding-left: 200px;}
+	.navbar-right{margin-right: 15px;}
+	.navbar-right p{margin-top: 20px;margin-bottom: 20px}
+	.navbar-right p:before{content: "";background: url(../images/logo.png) no-repeat center center;width: 35px;height: 35px;display: inline-block;vertical-align: middle;-webkit-background-size: 35px auto;background-size: 35px auto;margin-right: 5px;}
+	
+	.banner{margin-top: 80px;padding-bottom: 25px}
+	.banner .bannl{background-color: #fff;padding:25px 5px;margin-top: 20px}
+	.bannlm h3{margin-top: 0;font-weight: bolder;color:#666}
+	.bannlm .bannlmul{margin-bottom: 0;padding-top: 15px;} 
+	.bannlmul .banlmul-1 h3{color: #b65700}
+	.bannlmul .banlmul-2 h3{color: #61c500}
+	.banr{background-color: #e25e5e;padding-bottom: 15px;padding-top: 20px;position: relative;}
+	.banr:before{background:url(../images/sanjiao.png) no-repeat;width: 20px;height: 20px;-webkit-background-size: 20px 20px;
+	background-size: 20px 20px;position: absolute;left:-20px;top:-2px}
+	.banr h5{color: #eee;}
+	.banr h5 a{padding: 5px 15px;background-color: #ffe7b9;color:#e25e5e; margin-top: -10px}
+	.banr h4{color: #ffde00;font-weight: bolder;border-bottom: 1px solid #e77e7e;height: 40px;margin: 30px -15px;padding-left: 15px;margin-bottom: 10px}
+	.banr h3{color: #fff;font-weight: bolder;}
+	.banr h2{color: #ddd;background-color: #fff7f7;height: 60px;margin-bottom: 0;margin-top: 10px;line-height: 60px;padding-left: 15px;border-radius: 6px}
+	.banr span{font-weight: bolder;}
+	.banrm{margin-left: 0;}
+	.banrb .btn-sure{display: inline-block;line-height:40px;height:60px;width:100%;font-size: 30px;
+		background-color: #ffde00;color: #dc5454;}
+	.banrb .btn-sure:hover{background-color: #EAD335;}
+
+	.infotop {background-color: #e9e9e9;margin:0;}
+	.infotop ul{padding:0;margin:0;}
+	.infotop ul li h3{padding-bottom: 20px;text-align: center;color: #8c8c8c;}
+	.infotop ul li:hover,.active{background-color: #fff;}
+	.infotop ul li:hover h3,.infotop ul .active h3{color: #d66a08}
+	.infom{background-color: #fff;}
+	.infoml{border-right: 1px solid #e5e5e5;}
+	.infom>div{margin-top: 20px;margin-bottom: 20px}
+	.infom>div h4{color:#d66a08;}
+	.infomlul{padding: 0;}
+	.infomlul li{padding: 0;margin-bottom: 30px}
+	.infomlul li img{margin-right: 15px;}
+	.infomlul li div{margin-top: 20px;}
+	.infomlul li .infomrdiv{margin-top: 5px;}
+	.infomlul li span{margin-left: 30px}
+	.infomlul h5{color:#d66a08 ;font-weight: bolder;}
+	.infotable{border:1px solid #eaeaea;}
+	.infotable td{padding:15px;font-size: 14px;border:1px solid #eaeaea; }
+	.infotable .td1{padding-left: 30px;;color: #444444;font-weight: bolder;background-color: #f5f5f5;}
+	.infob{padding: 0}
+	.infob li{padding: 15px;width: 20%}
+	.infob li img{width: 100%;height: auto;}
+	.infob li h5{text-align: center;}
+	
+	ol,ul{list-style: none;}
+	@media screen and (max-width:768px){
+		body{padding-top: 43px;}
+		h4{font-size: 14px}
+		h3{font-size: 16px;}
+		h2{font-size: 18px;}
+		
+		.navbar-nav{padding: 0;margin-bottom: 0}
+		.navbar-nav div p{margin-top: 0px;margin-bottom: 0}
+		.navbar-btn{padding-top: 0;margin-top: 10px;}
+		.navbar{min-height: 43px;}
+		.navbar-toggle{margin:1px;margin-right: 15px;}
+		.navbar-brand{height: 43px}
+		.navbar-brand img{height: 43px;width: auto;}
+		
+		.banner{margin-top: 0px;}
+
+
+	}
+
+
+	.btn {
+    
+    border:none; 
+ 
+}

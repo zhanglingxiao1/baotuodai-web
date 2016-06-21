@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register.html</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-bao.css">
+    <style>
+    body{background-color: #fff;font-family: "Microsoft Yahei";font-size: 14px;padding-top:0;}
+    ul,ol{list-style: none;}
+     .fl{float: left;}
+     .fr{float: right;}
+     .navbar-brand{padding-top: 0;}
+      .navbar{margin-bottom: 0;}
+      .navbar-nav{margin-left:50%;}
+      .navbar-nav a{color:#fff;}
+      .navbar-nav li:hover,.navbar-nav .active{    background-color: #9f4f04;
+    text-decoration: none;
+    color: #fff;}
+.login-logo{padding-top:10px;}
+
+      .userlogin{background-color:rgb(244,244,244);padding-top:73px;height:800px;}
+
+      .userlogin .bgimg{position: relative;}
+
+      .loginlist{height:550px;  background-color: #fff;position: absolute;left:30%; top:15%;margin-left: 8.33%;width: 41.65%;}
+      .protrait{position: absolute;left:15%; top:47%;}
+      .protrait .account{display: block; width: 150px; height: 60px; line-height: 60px;background-color: rgb(198,148,102);margin-top: 20px;text-align: center;color: #fff;opacity: .9;}
+      .protrait .account img{margin-right: 8px;}
+      .protrait .account:hover{opacity: 1;}
+
+      .squit{display:block; width: 150px; height: 60px; line-height: 60px;background-color: #c0ddaf;position: absolute;right:5%; top: 25%;padding-left: 20px;}
+      .squit img{margin-right: 10px;}
+      .loginlist h1{color:#833f00;font-size:24px; font-weight:bold;line-height: 50px;}
+      .loginlist .user input,.loginlist .password input,.loginlist .phonenumber input{height: 65px;width:70%;margin-bottom: 20px;}
+        
+      .username img{float: left;}
+      .username input{height: 60px; width:35%;margin-bottom: 20px;padding-left: 15px;float: left;margin-left:5px;}
+      .username .validate{display:inline-block; height: 60px;line-height: 60px; width:30%;background-color: rgb(217,162,125);text-align: center;margin-left:5%;color: #fff;}
+      .username .validate:hover{background-color: rgb(197,152,115);}
+
+
+      .loginlist img{margin-right: 15px;}
+      .loginlist .user{position: relative;}
+      .loginlist .btnerror{display: inline-block; height: 35px;line-height: 35px; background-color: #ee8787;padding-right:1.38%;padding-left:8px; text-align:center;position:absolute;right:-70px; top:15px;color: #fff;opacity: .8;}
+
+      .loginlist .btnerror:hover{opacity: 1;}
+      .loginlist .new a{display:block; width: 130px; height:80px; line-height: 80px; background-color: rgb(65,149,13); color: #fff; text-align: center;position: absolute;left:35%; bottom: -40px;opacity: .9;font-size: 15px;}
+      .loginlist .new:hover{opacity: 1;}
+      .loginlist .new a,.loginlist .forget a{color: #fff;}
+
+      .content{margin-left:30px;}
+
+      .checkedbox{padding-left:50px;color: #999;font-size: 12px;}
+      .des{margin-top: 150px;line-height:80px;color: #888;margin-left:100px;font-size: 14px;}
+
+.username img{margin-top:13px;}
+
+
+       /*footer开始*/
+       .footer{margin-top:180px;}
+       /*footer结束*/
+    </style>
+</head>
+<body>
+	
+   	<nav class="navbar navbar-inverse navbar-fixed-top">
+	 	<div class="container">
+	 		<div class="navbar-header ">
+	 			<a href="myindex.html" class="navbar-brand navbar"><img src="images/detail-nav.png" alt="" class="login-logo"></a>
+	 			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+
+
+	 		</div>
+	 		<div id="mynav" class="collapse navbar-collapse navbar-righ">	
+	 		<ul class="nav navbar-nav ">
+	 			<li><a href="myindex.html">首页</a></li>
+        <li><a href="invest-record.html">投资项目</a></li>
+         <li><a href="borrow-money.html">我要借款</a></li>
+         <li><a href="about-us.html">关于我们</a></li>
+        <li><a href="news.html">新闻公告</a></li>
+	 			<li class="visible-xs"><button class="btn btn-primary  navbar-btn">注册</button></li>
+	 		</ul>
+	 		</div>
+
+	 </nav>
+
+
+
+
+        <div class="userlogin">
+	 	<div class="container clearfix">
+	 	<div class="bgimg">
+	 		<img src="images/registerbg2.png"  alt=""></div>
+	 		<div class="protrait">
+             <a href=""><img src="images/protrait.png" alt=""></a>
+             <a href="" class="account"><img src="images/tick.png" height="20" width="20" alt="">已有账号！</a>
+              
+             </div>
+   
+
+	 		<form action="" class="col-md-5  loginlist">
+	 		   <div class="content clearfix">
+	 		   <h1>登录宝驼贷</h1>
+	 		   <div class="user">
+	 		   <img src="images/user.png" height="31" width="24" alt="">
+	 		   <input type="text" placeholder="请输入用户名/手机、邮箱">
+               <a href="" class="btnerror "><img src="images/warning.png" height="20" width="20" alt="">用户名已存在<a>
+
+
+	 		   </div>
+	 		   <div class="password">
+	 		   <img src="images/lock.png" height="34" width="24" alt="">
+	 		   <input type="password" placeholder=". . . . . ."></div>
+
+	 		   <div class="username clearfix">
+	 		   <img src="images/pone-reg.png" height="34" width="24" alt="">
+	 		   <input type="text" class="mobile" placeholder="您的手机号码">
+	 		   <a href="" class="validate">获取验证码</a></div>
+
+
+	 		   <div class="phonenumber">
+	 		   <img src="images/phonenumber.png" alt="">
+	 		   <input type="text" placeholder="您的手机号码">
+               
+	 		   </div>
+               <div class="checkedbox">
+	 		   <input type="checkbox">&nbsp;同意 《名车贷注册协议》</div>
+	 		   <div class="new">
+	 			<a href="myindex.html" >确认注册</a>
+                
+	            </div>
+	           
+	 			</div>
+	 			 <h6 class="des"><img src="images/warninghover.png" height="25" width="25" alt="">您的个人信息，我们已加密请您放心！</h6>
+	 		</form>
+                 
+
+	 	  </div>
+
+	 	        
+
+
+
+
+	
+
+<!-- footer st -->
+<footer class="footer">
+  
+  <div class="bank">
+  <div class="container">
+    <h4>合作伙伴</h4>
+    <ul class="friend pull-left row col-xs-12">
+      <li class="pull-left"><a href=""><img src="images/bank1.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank2.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank3.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank4.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank5.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank6.jpg" height="45" width="136" alt=""></a></li>
+      <li class="pull-left"><a href=""><img src="images/bank7.jpg" height="45" width="136" alt=""></a></li>
+    </ul></div>
+    </div>
+    <div class="foot">
+    <div class="container">
+      <a href="" class="pull-left "><img src="images/footerlogo.png" alt=""></a><p class="float-right"><span class="pull-right hidden-xs">Copyright @ 2014 上海金融信息服务有限公司版权所有 mingchedai.com All Right Reserved</span><br><span class="pull-right hidden-xs">沪ICP备14044994号-1</span></p>
+    </div>
+  
+</div>
+</footer>
+
+<!-- footer ed -->
+
+
+
+
+
+
+
+
+
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
